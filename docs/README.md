@@ -1,5 +1,3 @@
-好的，根据你提供的前端项目目录截图，我将更新 README 文件中的目录结构部分。
-
 # ChargingStationManage
 
 ## 项目描述
