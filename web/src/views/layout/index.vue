@@ -13,6 +13,7 @@
           充电桩管理系统
         </div>
       </div>
+      <!-- 定义菜单是否折叠以及菜单数据，用于管理侧边栏菜单的展示和状态 -->
       <el-scrollbar class="layout-scrollbar">
         <!-- :unique-opened="true" 子菜单不能同时展开 -->
         <el-menu
@@ -26,15 +27,16 @@
         </el-menu>
       </el-scrollbar>
     </el-aside>
+
     <el-container>
       <el-header class="layout-header">
         <Header></Header>
       </el-header>
       <el-main class="layout-main">
+        <!-- 二级路由 -->
         <router-view />
       </el-main>
       <el-footer class="layout-footer">
-        项目作者：杨杨吖 (QQ：823208782)
       </el-footer>
     </el-container>
   </el-container>

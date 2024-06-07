@@ -3,9 +3,7 @@ package com.yjq.programmer.dto;
 import com.yjq.programmer.bean.CodeMsg;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2020-09-20 10:34
  */
 

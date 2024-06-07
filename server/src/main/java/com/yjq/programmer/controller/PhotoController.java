@@ -22,7 +22,7 @@ import java.util.Date;
 
 /**
  * 统一图片查看器
- * @author 82320
+ * @author wenLiu
  *
  */
 @RequestMapping("/photo")
@@ -64,7 +64,7 @@ public class PhotoController {
 		if(photo == null){
 			return ResponseDTO.errorByMsg(CodeMsg.PHOTO_EMPTY);
 		}
-		//检查上传文件大小 不能超过1MB
+		//检查上传文件大小 不能超过2MB
 		if(photo.getSize() > 2*1024*1024) {
 			return ResponseDTO.errorByMsg(CodeMsg.PHOTO_SURPASS_MAX_SIZE);
 		}
@@ -79,6 +79,7 @@ public class PhotoController {
 			//若不存在改目录，则创建目录
 			savePathFile.mkdir();
 		}
+		//TODO 文件名修改为base64进行存储
 		String filename = new Date().getTime()+"."+suffix;
 		logger.info("保存图片的路径:{}",savePath + filename);
 		try {

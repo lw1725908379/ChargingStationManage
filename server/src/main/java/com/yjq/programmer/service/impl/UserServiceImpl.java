@@ -44,6 +44,7 @@ public class UserServiceImpl implements IUserService {
     @Resource
     private RateMapper rateMapper;
 
+    //使用Spring Frame 默认配置类
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
@@ -288,6 +289,7 @@ public class UserServiceImpl implements IUserService {
             return responseDTO;
         }
         logger.info("获取到的登录信息={}", responseDTO.getData());
+        // TODO DTO把密码返回了...要设置个userVO
         return ResponseDTO.success(responseDTO.getData());
     }
 

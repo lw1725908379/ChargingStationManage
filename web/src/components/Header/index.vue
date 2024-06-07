@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <!-- 用于折叠和展开侧边栏的按钮/图标 -->
     <div class="header-left">
       <el-icon
         class="icon-collapse"
@@ -15,6 +16,7 @@
         @click="changeCollapse"
         ><Expand
       /></el-icon>
+       <!-- 面包屑导航容器 -->
       <div class="breadcrumb-box mask-image">
         <el-breadcrumb separator-icon="ArrowRight">
           <transition-group name="breadcrumb">
@@ -30,6 +32,7 @@
         </el-breadcrumb>
       </div>
     </div>
+    <!-- 页面右上角的用户头像和下拉菜单部分 -->
     <div class="header-right">
       <img
         class="header-avatar"
@@ -53,6 +56,7 @@
         </template>
       </el-dropdown>
     </div>
+    <!-- 利用自行封装Dialog组件 实现修改个人信息弹窗 -->
     <Dialog
       ref="userDialogRef"
       title="修改个人信息"
@@ -72,7 +76,7 @@
               <el-image
                 id="headPic-view"
                 :src="filterPhoto(data.userForm.headPic)"
-                style="width: 100px; height: 70px; margin-right: 10px"
+                style="width: 70px; height: 70px; margin-right: 10px ; border-radius: 10%;"
               />
               <el-button
                 type="primary"
@@ -242,7 +246,7 @@ const saveUser = async () => {
   }
 };
 
-// 获取面包屑数据
+// 获取面包屑数据 侧边栏只保留图标
 const breadcrumbList = computed(() => {
   return getBreadcrumbList(
     store.menuList,

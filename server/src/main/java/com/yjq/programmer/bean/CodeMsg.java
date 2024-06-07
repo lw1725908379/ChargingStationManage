@@ -1,9 +1,7 @@
 package com.yjq.programmer.bean;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2020-09-19 23:14
  */
 

@@ -14,9 +14,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-29 13:39
  */
 @RestController

@@ -2,17 +2,17 @@
   <div class="bigBox">
     <div class="box">
       <div class="slide-box" ref="slideRef">
-        <h1 class="slide-title">充电桩管理系统🌻</h1>
+        <h1 class="slide-title">充电桩管理系统</h1>
         <h1 class="slide-title" v-if="!switchLock">欢迎注册</h1>
         <p class="slide-title" v-if="switchLock">欢迎登录</p>
         <div class="img-box">
           <img src="@/assets/logo.png" alt="LOGO" />
         </div>
         <div class="slide-button" v-if="switchLock" @click="toRegister">
-          还没有账户？点击注册🌸
+          还没有账户？点击注册
         </div>
         <div class="slide-button" v-if="!switchLock" @click="toLogin">
-          已存在账户？点击登录🌸
+          已存在账户？点击登录
         </div>
       </div>
 
@@ -20,7 +20,7 @@
       <div class="register-form">
         <!-- 标题盒子 -->
         <div class="register-title">
-          <h1>用户注册🌸</h1>
+          <h1>用户注册</h1>
         </div>
         <!-- 输入框盒子 -->
         <el-form ref="registerFormRef" :model="registerForm">
@@ -62,7 +62,7 @@
         <!-- 注册按钮盒子 -->
         <div class="register-btn-box">
           <el-button class="register-btn" @click="handleRegister"
-            >注册🌻</el-button
+            >注册</el-button
           >
         </div>
       </div>
@@ -70,7 +70,7 @@
       <!-- 登录盒子 -->
       <div class="login-form">
         <div class="login-title">
-          <h1>用户登录🌸</h1>
+          <h1>用户登录</h1>
         </div>
         <el-form ref="loginFormRef" :model="loginForm">
           <el-form-item prop="username">
@@ -97,7 +97,7 @@
             class="login-btn"
             :loading="loginLoading"
             @click="handleLogin"
-            >登录🌻</el-button
+            >登录</el-button
           >
         </div>
       </div>
@@ -169,6 +169,7 @@ const handleLogin = async () => {
   const response = await axiosPostRequest("/user/login", loginForm);
   if (response.code === 0) {
     ElMessage.success(response.msg);
+    // 本地持久化登入用户token等信息
     setSessionStorage(response.data.token);
     loginFormRef.value.resetFields();
     router.push("/index");
@@ -185,7 +186,7 @@ const handleLogin = async () => {
   height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(to right, rgb(247 209 215), rgb(191 227 241));
-
+ 
   .box {
     position: relative;
     z-index: 2;

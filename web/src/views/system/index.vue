@@ -8,9 +8,10 @@
     "
   >
     <el-card class="card" shadow="hover" style="flex-shrink: 0; flex-grow: 0">
+      <!-- 添加水印 -->
       <div
         class="user"
-        v-waterMarker="{ text: 'Welcome', textColor: '#D9D9D9' }"
+        v-waterMarker="{ text: 'wenLiu', textColor: '#D9D9D9' }"
       >
         <img
           class="user-img"
@@ -32,7 +33,7 @@
             >
           </div>
           <div class="user-info" style="padding-bottom: 0">
-            欢迎来到充电桩管理系统~🌻
+            欢迎来到充电桩管理系统
           </div>
         </div>
       </div>

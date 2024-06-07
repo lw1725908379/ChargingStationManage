@@ -1,9 +1,7 @@
 package com.yjq.programmer.utils;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2021-04-26 19:09
  */
 
