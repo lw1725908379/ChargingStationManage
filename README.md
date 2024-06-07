@@ -1,5 +1,3 @@
-好的，根据你提供的前端项目目录截图，我将更新 README 文件中的目录结构部分。
-
 # ChargingStationManage
 
 ## 项目描述
@@ -53,7 +51,7 @@ ChargingStationManage 是一个基于 SpringBoot 和 Vue 框架开发的充电�
 - **Node.js 版本**: Node 14.16.1
 
 ## 项目启动步骤
-1. clone 。
+1. git clone https://github.com/lw1725908379/ChargingStationManage.git。
 2. 使用 IntelliJ IDEA 打开项目根目录。
 3. 配置 MySQL 和 Redis 环境，确保项目压缩包中自带的版本能够正常运行。
 4. 在 IntelliJ IDEA 中启动后端 SpringBoot 项目。
@@ -116,13 +114,7 @@ ChargingStationManage/
 └── README.md            项目说明文件
 ```
 
-## 贡献指南
-欢迎任何形式的贡献。请遵循以下步骤：
-1. Fork 此仓库。
-2. 创建一个新的分支：`git checkout -b feature-branch-name`。
-3. 提交更改：`git commit -m 'Add some feature'`。
-4. 推送到分支：`git push origin feature-branch-name`。
-5. 创建一个 Pull Request。
+
 
 ## 许可证
 本项目采用 MIT 许可证。详细信息请参阅 LICENSE 文件。
