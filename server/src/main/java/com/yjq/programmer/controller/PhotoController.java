@@ -3,6 +3,7 @@ package com.yjq.programmer.controller;
 import com.yjq.programmer.bean.CodeMsg;
 import com.yjq.programmer.dto.ResponseDTO;
 import com.yjq.programmer.utils.CommonUtil;
+import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ import java.util.Date;
  */
 @RequestMapping("/photo")
 @RestController
+@Api(tags = "图片管理")
 public class PhotoController {
 
 	@Autowired
@@ -42,6 +44,16 @@ public class PhotoController {
 	 * @param filename
 	 * @return
 	 */
+	@ApiOperation("查看图片")
+	@ApiImplicitParam(name = "filename", value = "图片文件名", required = true, dataType = "String", paramType = "query")
+	@ApiResponses(value = {
+			@ApiResponse(code = 200, message = "图片上传成功！", response = ResponseDTO.class),
+			@ApiResponse(code = -7, message = "图片格式不正确！"),
+			@ApiResponse(code = -8, message = "上传的图片不能超过2MB！"),
+			@ApiResponse(code = -9, message = "上传的图片格式不正确！"),
+			@ApiResponse(code = -16, message = "上传的图片不能为空！"),
+			@ApiResponse(code = 500, message = "文件保存异常")
+	})
 	@RequestMapping(value="/view")
 	public ResponseEntity<?> viewPhoto(@RequestParam(name="filename", required=true)String filename){
 		Resource resource = resourceLoader.getResource("file:" + uploadPhotoPath + filename);
@@ -59,6 +71,15 @@ public class PhotoController {
 	 * @param request
 	 * @return
 	 */
+	@ApiOperation("上传图片")
+	@ApiResponses(value = {
+			@ApiResponse(code = 200, message = "图片上传成功！", response = ResponseDTO.class),
+			@ApiResponse(code = -7, message = "图片格式不正确！"),
+			@ApiResponse(code = -8, message = "上传的图片不能超过2MB！"),
+			@ApiResponse(code = -9, message = "上传的图片格式不正确！"),
+			@ApiResponse(code = -16, message = "上传的图片不能为空！"),
+			@ApiResponse(code = 500, message = "文件保存异常")
+	})
 	@PostMapping(value="/upload")
 	public ResponseDTO<String> uploadPhoto(MultipartFile photo, HttpServletRequest request){
 		if(photo == null){

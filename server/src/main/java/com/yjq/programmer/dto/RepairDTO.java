@@ -1,31 +1,32 @@
 package com.yjq.programmer.dto;
 
 import com.yjq.programmer.annotation.ValidateEntity;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Date;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-31 9:53
  */
+@ApiModel(description = "报修传输对象")
 public class RepairDTO {
-
+    @ApiModelProperty("报修ID")
     private String id;
-
+    @ApiModelProperty("用户ID")
     private String userId;
-
+    @ApiModelProperty("充电桩ID")
     private String chargeId;
-
+    @ApiModelProperty("报修状态：1-未受理，2-已受理，3-已撤销，4-已完成")
     private Integer state;
-
+    @ApiModelProperty("报修时间")
     private Date createTime;
-
+    @ApiModelProperty("充电桩名称")
     private String chargeName;
-
+    @ApiModelProperty("用户昵称")
     private String username;
-
+    @ApiModelProperty("报修内容描述")
     @ValidateEntity(required=true,requiredMaxLength=true,requiredMinLength=true,maxLength=512,minLength=1,errorRequiredMsg="报修内容描述不能为空！",errorMaxLengthMsg="报修内容描述长度不能大于512！",errorMinLengthMsg="报修内容描述不能为空！")
     private String description;
 

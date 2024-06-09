@@ -1,32 +1,33 @@
 package com.yjq.programmer.dto;
 
 import com.yjq.programmer.annotation.ValidateEntity;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 10:38
  */
+@ApiModel(description = "电站传输对象")
 public class StationDTO {
-
+    @ApiModelProperty("电站唯一标识")
     private String id;
-
+    @ApiModelProperty("电站名称")
     @ValidateEntity(required=true,requiredMaxLength=true,requiredMinLength=true,maxLength=64,minLength=1,errorRequiredMsg="电站名称不能为空！",errorMaxLengthMsg="电站名称长度不能大于64！",errorMinLengthMsg="电站名称不能为空！")
     private String name;
-
+    @ApiModelProperty("电站位置")
     @ValidateEntity(required=true,requiredMaxLength=true,requiredMinLength=true,maxLength=256,minLength=1,errorRequiredMsg="电站位置不能为空！",errorMaxLengthMsg="电站位置长度不能大于256！",errorMinLengthMsg="电站位置不能为空！")
     private String location;
-
+    @ApiModelProperty("电站照片")
     private String photo;
-
+    @ApiModelProperty("充电桩数量")
     private Integer chargeNum;
-
+    @ApiModelProperty("可用充电桩数量")
     private Integer availableChargeNum;
-
+    @ApiModelProperty("运营商唯一标识")
     @ValidateEntity(required=true,errorRequiredMsg="电站所属运营商不能为空！")
     private String operatorId;
-
+    @ApiModelProperty("运营商信息")
     private OperatorDTO operatorDTO;
 
     public String getId() {

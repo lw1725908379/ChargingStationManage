@@ -1,30 +1,31 @@
 package com.yjq.programmer.dto;
 
 import com.yjq.programmer.annotation.ValidateEntity;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Date;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-31 12:12
  */
+@ApiModel(description = "告警传输对象")
 public class WarnDTO {
-
+    @ApiModelProperty("告警唯一标识")
     private String id;
-
+    @ApiModelProperty("用户唯一标识")
     private String userId;
-
+    @ApiModelProperty("告警内容描述")
     @ValidateEntity(required=true,requiredMaxLength=true,requiredMinLength=true,maxLength=512,minLength=1,errorRequiredMsg="告警内容描述不能为空！",errorMaxLengthMsg="告警内容描述长度不能大于512！",errorMinLengthMsg="告警内容描述不能为空！")
     private String content;
-
+    @ApiModelProperty("创建时间")
     private Date createTime;
-
+    @ApiModelProperty("用户名")
     private String username;
-
+    @ApiModelProperty("用户评分")
     private Integer rate;
-
+    @ApiModelProperty("用户传输对象")
     private UserDTO userDTO;
 
     public String getId() {

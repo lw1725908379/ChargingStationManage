@@ -2,48 +2,49 @@ package com.yjq.programmer.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.yjq.programmer.annotation.ValidateEntity;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 17:03
  */
+@ApiModel(description = "预约充电桩时传递的数据模型")
 public class AppointDTO {
-
+    @ApiModelProperty("预约表唯一标识")
     private String id;
-
+    @ApiModelProperty("用户ID")
     private String userId;
-
+    @ApiModelProperty("用户名")
     private String username;
-
+    @ApiModelProperty("充电桩ID")
     private String chargeId;
-
+    @ApiModelProperty("创建时间")
     private Date createTime;
-
+    @ApiModelProperty("预约日期")
     @ValidateEntity(required=true,errorRequiredMsg="预约日期不能为空！")
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date day;
-
+    @ApiModelProperty("预约时间段")
     @ValidateEntity(required=true,errorRequiredMsg="预约时间段不能为空！")
     private String time;
-
+    @ApiModelProperty("预约状态")
     private Integer state;
-
+    @ApiModelProperty("用户信息")
     private UserDTO userDTO;
-
+    @ApiModelProperty("充电桩信息")
     private ChargeDTO chargeDTO;
-
+    @ApiModelProperty("充电桩名称")
     private String chargeName;
-
+    @ApiModelProperty("充电价格")
     private BigDecimal chargePrice;
-
+    @ApiModelProperty("开始充电时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date startTime;
-
+    @ApiModelProperty("结束充电时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date endTime;
 

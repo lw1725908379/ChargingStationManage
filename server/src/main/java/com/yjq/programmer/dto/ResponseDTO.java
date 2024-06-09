@@ -1,6 +1,8 @@
 package com.yjq.programmer.dto;
 
 import com.yjq.programmer.bean.CodeMsg;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * @author wenLiu
@@ -11,11 +13,13 @@ import com.yjq.programmer.bean.CodeMsg;
  * 返回类数据传输对象  作用于service和controller
  * @param <T>
  */
+@ApiModel(description = "响应传输对象")
 public class ResponseDTO<T> {
+    @ApiModelProperty("响应码")
     private Integer code;
-
+    @ApiModelProperty("响应消息")
     private String msg;
-
+    @ApiModelProperty("响应数据")
     private T data;
 
     public Integer getCode() {
@@ -41,7 +45,6 @@ public class ResponseDTO<T> {
     public void setData(T data) {
         this.data = data;
     }
-
     private ResponseDTO(Integer code, String msg) {
         this.code = code;
         this.msg = msg;

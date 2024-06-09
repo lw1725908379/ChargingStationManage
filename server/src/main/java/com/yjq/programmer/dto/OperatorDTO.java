@@ -1,23 +1,24 @@
 package com.yjq.programmer.dto;
 
 import com.yjq.programmer.annotation.ValidateEntity;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 9:25
  */
+@ApiModel(description = "运营商传输对象")
 public class OperatorDTO {
-
+    @ApiModelProperty("运营商ID")
     private String id;
-
+    @ApiModelProperty(value = "运营商名称", required = true)
     @ValidateEntity(required=true,requiredMaxLength=true,requiredMinLength=true,maxLength=64,minLength=1,errorRequiredMsg="运营商名称不能为空！",errorMaxLengthMsg="运营商名称长度不能大于64！",errorMinLengthMsg="运营商名称不能为空！")
     private String name;
-
+    @ApiModelProperty("运营商描述")
     @ValidateEntity(requiredMaxLength=true,maxLength=512,errorMaxLengthMsg="运营商描述长度不能大于512！")
     private String description;
-
+    @ApiModelProperty("电站数量")
     private Integer stationNum;
 
     public String getId() {

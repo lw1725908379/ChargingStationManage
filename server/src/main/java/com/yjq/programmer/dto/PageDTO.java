@@ -1,37 +1,46 @@
 package com.yjq.programmer.dto;
 
-import java.util.List;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+import java.util.List;
+@ApiModel(description = "分页传输对象")
 public class PageDTO<T> {
 
     /**
      * 当前页码
      */
+    @ApiModelProperty("当前页码")
     private Integer page;
 
     /**
      * 每页条数
      */
+    @ApiModelProperty("每页条数")
     private Integer size;
 
     /**
      * 总条数
      */
+    @ApiModelProperty("总条数")
     private Long total;
 
     /**
      * 总页数
      */
+    @ApiModelProperty("总页数")
     private Integer totalPage;
 
     /**
      * 返回数据
      */
+    @ApiModelProperty("返回数据")
     private List<T> list;
 
     /**
      * 请求参数
      */
+    @ApiModelProperty("请求参数")
     private T param;
 
     public Integer getPage() {

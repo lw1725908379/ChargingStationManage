@@ -3,6 +3,7 @@ package com.yjq.programmer.domain;
 import java.math.BigDecimal;
 import java.util.Date;
 
+
 public class Appoint {
     private String id;
 

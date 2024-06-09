@@ -1,32 +1,34 @@
 package com.yjq.programmer.dto;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 22:10
  */
+@ApiModel(description = "订单传输对象")
 public class OrderDTO {
-
+    @ApiModelProperty("订单ID")
     private String id;
-
+    @ApiModelProperty("订单总价")
     private BigDecimal totalPrice;
-
+    @ApiModelProperty("用户ID")
     private String userId;
-
+    @ApiModelProperty("充电桩ID")
     private String chargeId;
-
+    @ApiModelProperty("充电桩名称")
     private String chargeName;
-
+    @ApiModelProperty("订单创建时间")
     private Date createTime;
-
+    @ApiModelProperty("订单状态")
     private Integer state;
-
+    @ApiModelProperty("用户名")
     private String username;
-
+    @ApiModelProperty("用户信息")
     private UserDTO userDTO;
 
     public String getId() {
