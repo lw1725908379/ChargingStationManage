@@ -1,0 +1,11 @@
+### save
+POST {{server_host}}/warn/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "content": "不文明发言",
+  "id": "",
+  "rate": 5,
+  "userId": "EoewKcJc"
+}

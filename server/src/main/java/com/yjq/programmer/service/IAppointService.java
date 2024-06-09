@@ -8,9 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 17:05
  */
 public interface IAppointService {

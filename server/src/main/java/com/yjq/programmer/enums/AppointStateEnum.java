@@ -1,9 +1,7 @@
 package com.yjq.programmer.enums;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 17:15
  */
 public enum AppointStateEnum {

@@ -1,0 +1,7 @@
+{
+  "timestamp": "2024-06-08 21:32:24",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No message available",
+  "path": "/appoint/edit_state"
+}

@@ -1,8 +1,6 @@
 package com.yjq.programmer.controller;
 
-import com.yjq.programmer.domain.Appoint;
 import com.yjq.programmer.dto.AppointDTO;
-import com.yjq.programmer.dto.CommentDTO;
 import com.yjq.programmer.dto.PageDTO;
 import com.yjq.programmer.dto.ResponseDTO;
 import com.yjq.programmer.service.IAppointService;
@@ -16,9 +14,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 17:17
  */
 @RestController

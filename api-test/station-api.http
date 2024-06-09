@@ -1,0 +1,38 @@
+### Save Station
+POST {{server_host}}/station/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "id": "",
+  "location": "测试充电中地址",
+  "name": "测试添加充电站",
+  "operatorId": "ehteT4Ia",
+  "photo": "common/no_image.jpg"
+}
+
+### Get Station List
+POST {{server_host}}/station/list
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "page": 1,
+  "size": 2,
+  "param": {
+    "name": "",
+    "operatorId": ""
+  }
+}
+
+### Delete Station
+POST {{server_host}}/station/delete
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "id": "TcBqkWLw"
+}
+
+
+

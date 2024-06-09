@@ -7,9 +7,7 @@ import com.yjq.programmer.dto.WarnDTO;
 import java.util.List;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-31 12:13
  */
 public interface IWarnService {

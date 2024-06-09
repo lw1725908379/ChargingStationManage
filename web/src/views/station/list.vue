@@ -116,7 +116,7 @@
         @change="onPageChange"
       />
     </el-card>
-
+    <!-- saveStation Dialog -->
     <Dialog ref="stationDialogRef" :title="title" @onConfirm="saveStation">
       <template #content>
         <el-form :model="dataList.stationForm" label-width="100px">
@@ -268,6 +268,7 @@ const openUpload = () => {
   document.getElementById("photo-file").click();
 };
 // 上传图片操作
+//TODO 提取通用uploadPhoto方法
 const uploadPhoto = async () => {
   let fileObj = document.getElementById("photo-file");
   if (fileObj.value === "") return;

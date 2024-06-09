@@ -5,37 +5,130 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/docs/面试模拟.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240607/1717767844376.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717776324136.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/994d9103-65f5-47e4-9fcf-34ca79557cf2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63e03530-f72e-4687-9b02-cb237ec4b3c2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/994d9103-65f5-47e4-9fcf-34ca79557cf2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63e03530-f72e-4687-9b02-cb237ec4b3c2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/994d9103-65f5-47e4-9fcf-34ca79557cf2/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63e03530-f72e-4687-9b02-cb237ec4b3c2/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/994d9103-65f5-47e4-9fcf-34ca79557cf2/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63e03530-f72e-4687-9b02-cb237ec4b3c2/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/994d9103-65f5-47e4-9fcf-34ca79557cf2/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63e03530-f72e-4687-9b02-cb237ec4b3c2/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_annotations_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_core_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_boot_autoconfigure_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_boot_starter_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_knife4j_spring_ui_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_android.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_83.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_boot_starter_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_data_rest_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_oas_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webmvc_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_25_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/appoint-api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/operator-api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/order-api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/repair.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/station-api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/user-api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-test/warn.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/数据库表设计.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/5. Swagger.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/annotation/ValidateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/annotation/ValidateEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/bean/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/bean/CodeMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/PhotoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/ResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/constant/RuntimeConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/constant/RuntimeConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/AppointController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/AppointController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/ChargeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/ChargeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/OperatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/OperatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/RepairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/RepairController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/StationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/WarnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/WarnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/AppointStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/AppointStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/ChargeStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/ChargeStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/OrderStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/OrderStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RateTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RateTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RepairStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RepairStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RoleEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IAppointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IAppointService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IChargeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IChargeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/ICommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/ICommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IOperatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IOperatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IRepairService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IRepairService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IStationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IStationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IWarnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IWarnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/AppointServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/AppointServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/OperatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/OperatorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/StationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/StationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/ValidateEntityUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/ValidateEntityUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/bean/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/bean/CodeMsg.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/Header/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/Header/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/layout/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/AppointController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/AppointController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/ChargeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/ChargeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/OperatorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/OperatorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/PhotoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/PhotoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/RepairController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/RepairController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/StationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/StationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/WarnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/controller/WarnController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/dto/ResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/AppointStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/AppointStateEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/ChargeStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/ChargeStateEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/OrderStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/OrderStateEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/RateTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/RateTypeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/RepairStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/RepairStateEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/RoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/enums/RoleEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/AppointServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/AppointServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/OperatorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/OperatorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/StationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/StationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/utils/CommonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/utils/CommonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/utils/ValidateEntityUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/utils/ValidateEntityUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/Dialog/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/Dialog/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/charge/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/charge/list.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/system/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/system/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/operator/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/operator/list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/order/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/order/list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/repair/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/repair/list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/station/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/station/list.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/views/user/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/user/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/warn/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/warn/list.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +147,21 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$PROJECT_DIR$/api-test/user-api.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/api-test/operator-api.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/api-test/station-api.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/api-test/appoint-api.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/api-test/order-api.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/api-test/repair.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/api-test/warn.http" environment="dev" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,46 +186,55 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2aCeuJiSDQtLnFwNjSa9duXnIuU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/WORKS/java/projects/ChargingStationManage/web/package.json&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.13967973&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.29089028&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cf1e8c14e54505f60aa10ceb8d5d8ab3&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WORK/COMPUTER/projects/sky-take-out",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.13967973",
+    "project.structure.side.proportion": "0.29089028",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "cf1e8c14e54505f60aa10ceb8d5d8ab3",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WORKS\java\projects\ChargingStationManage" />
       <recent name="D:\idea_project\ChargingStationManage\server\src\main\resources" />
       <recent name="D:\idea_project\ChargingStationManage\server\src\main\java\com\yjq\programmer" />
       <recent name="D:\idea_project\ChargingStationManage\server\src\main\java\com\yjq\programmer\utils" />
@@ -139,6 +251,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ChargingStationManageApplication">
+    <configuration name="order-api | edit_state" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/order-api.http" index="3" requestIdentifier="edit_state" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="order-api | edit_state2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/order-api.http" index="4" requestIdentifier="edit_state2" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="repair | save" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/repair.http" requestIdentifier="save" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="warn | save" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/warn.http" requestIdentifier="save" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
     <configuration name="generator" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -166,7 +290,6 @@
       <method v="2" />
     </configuration>
     <configuration name="ChargingStationManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
       <module name="server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yjq.programmer.ChargingStationManageApplication" />
       <extension name="coverage">
@@ -190,6 +313,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.order-api | edit_state" />
+      <item itemvalue="HTTP 请求.order-api | edit_state2" />
+      <item itemvalue="HTTP 请求.repair | save" />
+      <item itemvalue="HTTP 请求.warn | save" />
       <item itemvalue="Maven.generator" />
       <item itemvalue="npm.dev" />
       <item itemvalue="Spring Boot.ChargingStationManageApplication" />
@@ -197,6 +324,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ChargingStationManageApplication" />
+        <item itemvalue="HTTP 请求.warn | save" />
+        <item itemvalue="HTTP 请求.repair | save" />
+        <item itemvalue="HTTP 请求.order-api | edit_state2" />
+        <item itemvalue="HTTP 请求.order-api | edit_state" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +364,9 @@
       <workItem from="1717392114191" duration="1193000" />
       <workItem from="1717513745240" duration="351000" />
       <workItem from="1717566764920" duration="4186000" />
-      <workItem from="1717763446229" duration="11895000" />
+      <workItem from="1717763446229" duration="12815000" />
+      <workItem from="1717807362864" duration="32093000" />
+      <workItem from="1717896589265" duration="2258000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -286,6 +419,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Default Changelist" />
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>

@@ -69,13 +69,13 @@
           >
         </el-col>
       </el-row>
-
+      <!-- 充电桩分页列表 -->
       <el-table
         border
         @selection-change="handleSelectionChange"
         v-adaptive
         :data="dataList.chargeList"
-        empty-text="暂时没查到数据哟🌻"
+        empty-text="暂时没查到数据哟"
       >
         <el-table-column type="selection" width="55"> </el-table-column>
         <el-table-column label="序号" prop="id" width="140px"></el-table-column>
@@ -137,7 +137,7 @@
         @change="onPageChange"
       />
     </el-card>
-
+    <!-- 管理员新增充电桩信息 -->
     <Dialog ref="chargeDialogRef" :title="title" @onConfirm="saveCharge">
       <template #content>
         <el-form :model="dataList.chargeForm" label-width="130px">
@@ -225,7 +225,7 @@
         ></div>
       </template>
     </Dialog>
-
+    <!-- 普通人员新增预约信息 -->
     <Dialog ref="appointDialogRef" :title="title" @onConfirm="saveAppoint">
       <template #content>
         <el-form
@@ -429,6 +429,7 @@ const dataList = reactive({
 
 // 禁用日期
 const disabledDate = (date) => {
+  // 8.64e7 ms === 24h
   if (date.getTime() < Date.now() - 8.64e7) {
     return true;
   }
@@ -601,11 +602,13 @@ const getAppointDate = async () => {
     chargeId: dataList.appointForm.id,
   });
   if (response.code === 0) {
+    // 通过后端查询 appoint 表，获取了预约当天该充电桩已被预约的时间段。
     let timeList = response.data
       .filter(
         (item) => item.day === format(dataList.appointForm.day, "yyyy-MM-dd")
       )
       .map((item) => item.time);
+    // 将已被预约时间段设置为不可预约状态
     newScheduleOptions = newScheduleOptions.map((item) => {
       timeList.forEach((e) => {
         if (e === item.label) {
@@ -613,6 +616,7 @@ const getAppointDate = async () => {
         }
       });
       let timeRange = item.value.split("-");
+      // 将当前时间之前的时间段设定为不可预约状态。
       if (
         Number(timeRange[0]) <= Number(format(new Date(), "HH")) &&
         format(dataList.appointForm.day, "yyyy-MM-dd") ===

@@ -5,9 +5,7 @@ import com.yjq.programmer.dto.RepairDTO;
 import com.yjq.programmer.dto.ResponseDTO;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-31 10:08
  */
 public interface IRepairService {

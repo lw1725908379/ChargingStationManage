@@ -46,7 +46,7 @@
         @selection-change="handleSelectionChange"
         v-adaptive
         :data="dataList.warnList"
-        empty-text="暂时没查到数据哟🌻"
+        empty-text="暂时没查到数据"
       >
         <el-table-column type="selection" width="55"> </el-table-column>
         <el-table-column label="序号" prop="id" width="140px"></el-table-column>

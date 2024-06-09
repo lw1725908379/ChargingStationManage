@@ -29,9 +29,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-29 13:41
  */
 @Service
@@ -122,6 +120,7 @@ public class UserServiceImpl implements IUserService {
         }
         PageHelper.startPage(pageDTO.getPage(), pageDTO.getSize());
         // 分页查出用户数据
+        // select * from user where username like "%张%" limit 0,(page-1)*size;
         List<User> userList = userMapper.selectByExample(userExample);
         PageInfo<User> pageInfo = new PageInfo<>(userList);
         // 获取数据的总数
@@ -281,6 +280,7 @@ public class UserServiceImpl implements IUserService {
      */
     @Override
     public ResponseDTO<UserDTO> checkLogin(UserDTO userDTO) {
+        System.out.println(userDTO);
         if(userDTO == null || CommonUtil.isEmpty(userDTO.getToken())){
             return ResponseDTO.errorByMsg(CodeMsg.USER_SESSION_EXPIRED);
         }
@@ -330,7 +330,9 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ResponseDTO<UserDTO> getLoginUser(String token){
+        logger.info("从redis获取键为={}的token" , "USER_" + token);
         String value = stringRedisTemplate.opsForValue().get("USER_" + token);
+        logger.info("从redis中获取到的登录信息={}", value=="" ? "null" : value);
         if(CommonUtil.isEmpty(value)){
             return ResponseDTO.errorByMsg(CodeMsg.USER_SESSION_EXPIRED);
         }

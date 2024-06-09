@@ -1,0 +1,66 @@
+### Get Appointed Dates
+POST {{server_host}}/appoint/appointed
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "chargeId": "8WiEiUSi"
+}
+
+### Save Appointment
+POST {{server_host}}/appoint/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "id": "",
+  "userId": "EoewKcJc",
+  "chargeId": "FCUVssP9",
+  "chargeName": "40kW一体式直流充电机",
+  "chargePrice": "1.77",
+  "create_time": "2024-06-08 18:14:59",
+  "day": "2024-06-08",
+  "time": "23:00-24:00",
+  "state": "1",
+  "start_time": "",
+  "end_time": ""
+}
+
+### Delete Charge
+POST {{server_host}}/charge/delete
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "id": "8i2XxSbc"
+}
+
+### start charge
+POST {{server_host}}/appoint/edit_state
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "id": "ezWiAfiB",
+  "state": 2
+}
+
+### end charge
+POST {{server_host}}/appoint/edit_state
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "id": "ezWiAfiB",
+  "endTime": "2024-06-08 20:50:00",
+  "time": 5,
+  "state": 3
+}
+
+
+
+
+
+
+
+

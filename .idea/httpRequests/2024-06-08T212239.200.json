@@ -1,0 +1,65 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "page": 1,
+    "size": 5,
+    "total": 2,
+    "totalPage": 1,
+    "list": [
+      {
+        "id": "z0krofZ0",
+        "totalPrice": 30.60,
+        "userId": "EoewKcJc",
+        "chargeId": "8WiEiUSi",
+        "chargeName": "160kW一体式直流充电机(四枪)",
+        "createTime": "2024-06-08 21:19:10",
+        "state": 2,
+        "username": null,
+        "userDTO": {
+          "id": "EoewKcJc",
+          "username": "test",
+          "password": "test1234abcd@",
+          "phone": "13710724669",
+          "headPic": "common/no_image.jpg",
+          "sex": 1,
+          "rate": 100,
+          "roleId": 1,
+          "token": null
+        }
+      },
+      {
+        "id": "4dzY5QSW",
+        "totalPrice": 46.02,
+        "userId": "EoewKcJc",
+        "chargeId": "FCUVssP9",
+        "chargeName": "40kW一体式直流充电机",
+        "createTime": "2024-06-08 20:38:14",
+        "state": 2,
+        "username": null,
+        "userDTO": {
+          "id": "EoewKcJc",
+          "username": "test",
+          "password": "test1234abcd@",
+          "phone": "13710724669",
+          "headPic": "common/no_image.jpg",
+          "sex": 1,
+          "rate": 100,
+          "roleId": 1,
+          "token": null
+        }
+      }
+    ],
+    "param": {
+      "id": "",
+      "totalPrice": null,
+      "userId": "EoewKcJc",
+      "chargeId": null,
+      "chargeName": null,
+      "createTime": null,
+      "state": 0,
+      "username": "",
+      "userDTO": null
+    }
+  }
+}

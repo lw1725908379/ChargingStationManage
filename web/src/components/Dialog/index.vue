@@ -10,7 +10,7 @@
     :footerHidden="footerHidden"
   >
     <div class="container">
-      <!-- 具名插槽 -->
+      <!-- 具名插槽 父类传递content信息到当前Dialog子类-->
       <slot name="content"></slot>
     </div>
     <template #footer v-if="!footerHidden">

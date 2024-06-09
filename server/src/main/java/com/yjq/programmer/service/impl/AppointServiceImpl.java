@@ -32,9 +32,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 17:06
  */
 @Service
@@ -117,10 +115,15 @@ public class AppointServiceImpl implements IAppointService {
             criteria.andUserIdEqualTo(appointDTO.getUserId());
         }
         List<Appoint> appointList = appointMapper.selectByExample(appointExample);
+        /*appointList 中筛选出当前时间之前尚未结束的预约，
+        并将这些预约重新收集成一个列表。
+        具体来说，它检查每个预约的结束时间，并过滤掉那些已经过期的预约。*/
         appointList = appointList.stream().filter(item -> {
             String[] splitTime = item.getTime().split("-");
-            Date endDate = CommonUtil.getFormatterDate(CommonUtil.getFormatterDate(item.getDay(), "yyyy-MM-dd") + " " + splitTime[1], "yyyy-MM-dd HH:mm");
-            return new Date().getTime() <= endDate.getTime();
+            // splitTime[0] :6:00  end : splitTime[1] : 8:00
+            Date endDate = CommonUtil.getFormatterDate(CommonUtil.getFormatterDate(item.getDay(),
+                    "yyyy-MM-dd") + " " + splitTime[1], "yyyy-MM-dd HH:mm");
+            return new Date().getTime() <= endDate.getTime();//返回当前时间往后的预约数据。当前时间之前的数据前端处理（不可约）
         }).collect(Collectors.toList());
         return ResponseDTO.success(CopyUtil.copyList(appointList, AppointDTO.class));
     }

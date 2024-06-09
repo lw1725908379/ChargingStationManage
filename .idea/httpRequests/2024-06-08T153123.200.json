@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "page": 1,
+    "size": 10,
+    "total": 7,
+    "totalPage": 1,
+    "list": [
+      {
+        "id": "2t0mvrAu",
+        "name": "开迈斯充电站(杭州市宏程国际大厦交直流站)",
+        "location": "浙江省杭州市江干区剧院路358-396号",
+        "photo": "20240608/1717830206128.jpg",
+        "chargeNum": 1,
+        "availableChargeNum": 1,
+        "operatorId": "ehteT4Ia",
+        "operatorDTO": {
+          "id": "ehteT4Ia",
+          "name": "特来电",
+          "description": "特来电新能源股份有限公司是新能源汽车充电设备制造商和充电网运营商，主要从事充电设备的研发、生产、销售及充电网的建设与运营，为用户提供充电系统解决方案及充电网运营服务。",
+          "stationNum": 6
+        }
+      },
+      {
+        "id": "6uiT2l58",
+        "name": "杭州巨化宾馆充电站",
+        "location": "浙江省杭州市上城区江城路849号巨化宾馆",
+        "photo": "20240107/1704595426817.jpg",
+        "chargeNum": 3,
+        "availableChargeNum": 3,
+        "operatorId": "ehteT4Ia",
+        "operatorDTO": {
+          "id": "ehteT4Ia",
+          "name": "特来电",
+          "description": "特来电新能源股份有限公司是新能源汽车充电设备制造商和充电网运营商，主要从事充电设备的研发、生产、销售及充电网的建设与运营，为用户提供充电系统解决方案及充电网运营服务。",
+          "stationNum": 6
+        }
+      },
+      {
+        "id": "p4C8GnU8",
+        "name": "星星快充下属充电站",
+        "location": "杭州广汽工厂充电站\n",
+        "photo": "20240107/1704595496742.jpg",
+        "chargeNum": 1,
+        "availableChargeNum": 1,
+        "operatorId": "WuN1ITuy",
+        "operatorDTO": {
+          "id": "WuN1ITuy",
+          "name": "星星充电",
+          "description": "星星充电，专注于新能源汽车充电设备制造，为全球客户提供设备、平台、用户和数据运营服务，借助车辆销售、私人充电、公共充电、金融保险等业务打造用户充电全生命周期软件。",
+          "stationNum": 1
+        }
+      },
+      {
+        "id": "p8rk8JVT",
+        "name": "杭州湾智慧谷立涛园充电站",
+        "location": "浙江省杭州市萧山区盈丰街道杭州湾智慧谷",
+        "photo": "20240608/1717830341294.jpg",
+        "chargeNum": 1,
+        "availableChargeNum": 1,
+        "operatorId": "ehteT4Ia",
+        "operatorDTO": {
+          "id": "ehteT4Ia",
+          "name": "特来电",
+          "description": "特来电新能源股份有限公司是新能源汽车充电设备制造商和充电网运营商，主要从事充电设备的研发、生产、销售及充电网的建设与运营，为用户提供充电系统解决方案及充电网运营服务。",
+          "stationNum": 6
+        }
+      },
+      {
+        "id": "PFr2ueML",
+        "name": "测试添加充电站",
+        "location": "测试充电中地址",
+        "photo": "common/no_image.jpg",
+        "chargeNum": 0,
+        "availableChargeNum": 0,
+        "operatorId": "ehteT4Ia",
+        "operatorDTO": {
+          "id": "ehteT4Ia",
+          "name": "特来电",
+          "description": "特来电新能源股份有限公司是新能源汽车充电设备制造商和充电网运营商，主要从事充电设备的研发、生产、销售及充电网的建设与运营，为用户提供充电系统解决方案及充电网运营服务。",
+          "stationNum": 6
+        }
+      },
+      {
+        "id": "sIz9qJDM",
+        "name": "杭州采荷嘉业大厦充电站",
+        "location": "浙江省杭州市上城区江干区新塘路17号",
+        "photo": "20240608/1717830104732.jpg",
+        "chargeNum": 1,
+        "availableChargeNum": 1,
+        "operatorId": "ehteT4Ia",
+        "operatorDTO": {
+          "id": "ehteT4Ia",
+          "name": "特来电",
+          "description": "特来电新能源股份有限公司是新能源汽车充电设备制造商和充电网运营商，主要从事充电设备的研发、生产、销售及充电网的建设与运营，为用户提供充电系统解决方案及充电网运营服务。",
+          "stationNum": 6
+        }
+      },
+      {
+        "id": "TcBqkWLw",
+        "name": "测试添加充电站",
+        "location": "测试充电中地址",
+        "photo": "common/no_image.jpg",
+        "chargeNum": 0,
+        "availableChargeNum": 0,
+        "operatorId": "ehteT4Ia",
+        "operatorDTO": {
+          "id": "ehteT4Ia",
+          "name": "特来电",
+          "description": "特来电新能源股份有限公司是新能源汽车充电设备制造商和充电网运营商，主要从事充电设备的研发、生产、销售及充电网的建设与运营，为用户提供充电系统解决方案及充电网运营服务。",
+          "stationNum": 6
+        }
+      }
+    ],
+    "param": {
+      "id": null,
+      "name": "",
+      "location": null,
+      "photo": null,
+      "chargeNum": null,
+      "availableChargeNum": null,
+      "operatorId": "",
+      "operatorDTO": null
+    }
+  }
+}

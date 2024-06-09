@@ -1,0 +1,723 @@
+POST http://localhost:8085/warn/save
+Content-Type: application/json
+Token: hEyyjWvh
+
+{
+  "content": "不文明发言",
+  "id": "",
+  "rate": 5,
+  "userId": "EoewKcJc"
+}
+
+<> 2024-06-08T215720.200.json
+
+###
+
+POST http://localhost:8085/warn/save
+Content-Type: application/json
+Token: LmgHGGiq
+
+{
+  "content": "不文明发言",
+  "id": "",
+  "rate": 5,
+  "userId": "EoewKcJc"
+}
+
+<> 2024-06-08T215658.200.json
+
+###
+
+POST http://{{server_host}}/warn/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "content": "不文明发言",
+  "id": "",
+  "rate": 5,
+  "userId": "EoewKcJc"
+}
+
+###
+
+POST http://localhost:8085/repair/save
+Content-Type: application/json
+Token: LmgHGGiq
+
+{
+  "chargeId": "JaVyvgju",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了.....",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
+
+<> 2024-06-08T214249.200.json
+
+###
+
+POST http://localhost:8085/repair/save
+Content-Type: application/json
+Token: LmgHGGiq
+
+{
+  "chargeId": "LmgHGGiq",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了.....",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
+
+<> 2024-06-08T214219.500.json
+
+###
+
+POST http://localhost:8085/station/repair/save
+Content-Type: application/json
+Token: LmgHGGiq
+
+{
+  "chargeId": "LmgHGGiq",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了.....",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
+
+<> 2024-06-08T214200.404.json
+
+###
+
+POST http://localhost:8085/station/repair/save
+Content-Type: application/json
+Token: A21wqIru
+
+{
+  "chargeId": "A21wqIru",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了.....",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
+
+<> 2024-06-08T214123.200.json
+
+###
+
+POST http://{{server_host}}/station/repair/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "chargeId": "{{acess_token}}",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了.....",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
+
+###
+
+POST http://localhost:8085/order/edit_state
+Content-Type: application/json
+Token: A21wqIru
+
+{
+  "id": "z0krofZ0",
+  "state": "2"
+}
+
+<> 2024-06-08T213317.200.json
+
+###
+
+POST http://localhost:8085/order/edit_state
+Content-Type: application/json
+Token: A21wqIru
+
+{
+  "id": "z0krofZ0",
+  "state": "1"
+}
+
+<> 2024-06-08T213253.200.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: A21wqIru
+
+{
+  "id": "ezWiAfiB",
+  "endTime": "2024-06-08 20:50:00",
+  "time": 5,
+  "state": 3
+}
+
+<> 2024-06-08T213224.500.json
+
+###
+
+POST http://localhost:8085/order/edit_state
+Content-Type: application/json
+Token: r2TO1Bok
+
+{
+  "id": "z0krofZ0",
+  "state": "1"
+}
+
+<> 2024-06-08T213045.200.json
+
+###
+
+POST http://localhost:8085/order/list
+Content-Type: application/json
+Token: r2TO1Bok
+
+{
+  "page": "",
+  "size": "",
+  "param": {
+    "username": "",
+    "id": "",
+    "userId": "EoewKcJc",
+    "state": "0"
+  }
+}
+
+<> 2024-06-08T212239.200.json
+
+###
+
+POST http://localhost:8085/order/list
+Content-Type: application/json
+
+{
+  "page": "",
+  "size": "",
+  "param": {
+    "username": "",
+    "id": "",
+    "userId": "EoewKcJc",
+    "state": "0"
+  }
+}
+
+<> 2024-06-08T212226.200.json
+
+###
+
+POST http://localhost:8085/order/edit_state
+Content-Type: application/json
+Token: r2TO1Bok
+
+{
+  "id": "z0krofZ0",
+  "state": 2
+}
+
+<> 2024-06-08T212011.200.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: r2TO1Bok
+
+{
+  "id": "ezWiAfiB",
+  "endTime": "2024-06-08 20:50:00",
+  "time": 5,
+  "state": 3
+}
+
+<> 2024-06-08T205033.500.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: r2TO1Bok
+
+{
+  "id": "ezWiAfiB",
+  "endTime": "2024-06-08 20:45:09",
+  "time": 5,
+  "state": 3
+}
+
+<> 2024-06-08T205003.500.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: r2TO1Bok
+
+{
+  "id": "ezWiAfiB",
+  "time": 10,
+  "state": 3
+}
+
+<> 2024-06-08T204816.500.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: vwoE78FR
+
+{
+  "id": "ezWiAfiB",
+  "time": 10,
+  "state": 3
+}
+
+<> 2024-06-08T204748.200.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: vwoE78FR
+
+{
+  "id": "ezWiAfiB",
+  "time": 10,
+  "state": 3
+}
+
+<> 2024-06-08T204742.200.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+
+{
+  "id": "ezWiAfiB",
+  "time": 10,
+  "state": 3
+}
+
+<> 2024-06-08T204657.200.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: vwoE78FR
+
+{
+  "id": "ezWiAfiB",
+  "state": 2
+}
+
+<> 2024-06-08T204508.200.json
+
+###
+
+POST http://localhost:8085/appoint/edit_state
+Content-Type: application/json
+Token: vwoE78FR
+
+{
+  "id": "9wMBW5T8",
+  "state": 2
+}
+
+<> 2024-06-08T201928.200.json
+
+###
+
+POST http://localhost:8085/appoint/appointed
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "chargeId": "8WiEiUSi"
+}
+
+<> 2024-06-08T185440.200.json
+
+###
+
+POST http://localhost:8085/charge/delete
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "8i2XxSbc"
+}
+
+<> 2024-06-08T182322.200.json
+
+###
+
+POST http://localhost:8085/appoint/appointed
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "chargeId": "8WiEiUSi"
+}
+
+<> 2024-06-08T181523.200.json
+
+###
+
+POST http://localhost:8085/appoint/save
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "",
+  "userId": "EoewKcJc",
+  "chargeId": "FCUVssP9",
+  "chargeName": "40kW一体式直流充电机",
+  "chargePrice": "1.77",
+  "create_time": "2024-06-08 18:14:59",
+  "day": "2024-06-08",
+  "time": "23:00-24:00",
+  "state": "1",
+  "start_time": "",
+  "end_time": ""
+}
+
+<> 2024-06-08T181517.200.json
+
+###
+
+POST http://localhost:8085/appoint/appointed
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "chargeId": "8WiEiUSi"
+}
+
+<> 2024-06-08T165855.200.json
+
+###
+
+POST http://{{server_host}}/appoint/appointed
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "chargeId": "8WiEiUSi"
+}
+
+###
+
+POST http://localhost:8085/station/save
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "",
+  "location": "测试充电中地址",
+  "name": "测试添加充电站",
+  "operatorId": "ehteT4Ia",
+  "photo": "common/no_image.jpg"
+}
+
+<> 2024-06-08T153543.200.json
+
+###
+
+POST http://localhost:8085/station/delete
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "TcBqkWLw"
+}
+
+<> 2024-06-08T153451.500.json
+
+###
+
+POST http://localhost:8085/station/delete
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "TcBqkWLw",
+  "token": "7yMajeRj"
+}
+
+<> 2024-06-08T153425.500.json
+
+###
+
+POST http://localhost:8085/station/list
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "page": 1,
+  "size": 2,
+  "param": {
+    "name": "",
+    "operatorId": ""
+  }
+}
+
+<> 2024-06-08T153148.200.json
+
+###
+
+POST http://localhost:8085/station/list
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "page": 1,
+  "size": 10,
+  "param": {
+    "name": "",
+    "operatorId": ""
+  }
+}
+
+<> 2024-06-08T153123.200.json
+
+###
+
+POST http://localhost:8085/station/save
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "",
+  "location": "测试充电中地址",
+  "name": "测试添加充电站",
+  "operatorId": "ehteT4Ia",
+  "photo": "common/no_image.jpg"
+}
+
+<> 2024-06-08T152924.200.json
+
+###
+
+POST http://localhost:8085/station/save
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "",
+  "name": "Example Station",
+  "location": "123 Main St",
+  "operatorId": "12345",
+  "photo": "common/no_image.jpg",
+  "token": "7yMajeRj"
+}
+
+<> 2024-06-08T152634.500.json
+
+###
+
+POST http://localhost:8085/station/save
+Content-Type: application/json
+Token: 7yMajeRj}
+
+{
+  "id": "",
+  "name": "Example Station",
+  "location": "123 Main St",
+  "operatorId": "12345",
+  "photo": "common/no_image.jpg",
+  "token": "7yMajeRj"
+}
+
+<> 2024-06-08T152621.200.json
+
+###
+
+POST http://localhost:8085/station/save
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "id": "",
+  "name": "Example Station",
+  "location": "123 Main St",
+  "operatorId": "12345",
+  "photo": "common/no_image.jpg",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T152534.200.json
+
+###
+
+POST http://{{server_host}}/station/save
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "id": "",
+  "name": "Example Station",
+  "location": "123 Main St",
+  "operatorId": "12345",
+  "photo": "common/no_image.jpg",
+  "token": "{{access_token}}"
+}
+
+###
+
+POST http://localhost:8085/operator/list
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "page": 1,
+  "size": 5,
+  "param": {
+  }
+}
+
+<> 2024-06-08T144305.200.json
+
+###
+
+POST http://localhost:8085/operator/delete
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "id": "42SS7Pec",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T143825.200.json
+
+###
+
+POST http://localhost:8085/operator/delete
+Content-Type: application/json
+Token: 7yMajeRj}
+
+{
+  "id": "42SS7Pec",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T143817.200.json
+
+###
+
+POST http://localhost:8085/operator/delete
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "id": "42SS7Pec",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T143754.200.json
+
+###
+
+POST http://localhost:8085/operator/save
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "name": "Example Operator",
+  "description": "This is a sample operator description.",
+  "token": "7yMajeRj"
+}
+
+<> 2024-06-08T143019.200.json
+
+###
+
+POST http://localhost:8085/operator/save
+Content-Type: application/json
+Token: 7yMajeRj
+
+{
+  "name": "Example Operator",
+  "description": "This is a sample operator description.",
+  "token": "7yMajeRj"
+}
+
+<> 2024-06-08T142937.200.json
+
+###
+
+POST http://localhost:8085/operator/save
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "name": "Example Operator",
+  "description": "This is a sample operator description.",
+  "token": "7yMajeRj"
+}
+
+<> 2024-06-08T142905.200.json
+
+###
+
+POST http://localhost:8085/operator/save
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "name": "Example Operator",
+  "description": "This is a sample operator description.",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T142832.200.json
+
+###
+
+POST http://localhost:8085/user/check_login
+Token: IMeFaRWW
+Content-Type: application/json
+
+{
+  "token": "IMeFaRWW"
+}
+
+<> 2024-06-08T142813.200.json
+
+###
+
+POST http://localhost:8085/operator/save
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "name": "Example Operator",
+  "description": "This is a sample operator description.",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T142743.200.json
+
+###
+
+POST http://localhost:8085/operator/save
+Content-Type: application/json
+Token: {{access_token}}
+
+{
+  "name": "Example Operator",
+  "description": "This is a sample operator description.",
+  "token": "{{access_token}}"
+}
+
+<> 2024-06-08T142655.200.json
+
+###
+

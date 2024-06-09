@@ -32,7 +32,7 @@
           >
         </el-form-item>
       </el-form>
-
+      <!-- 判断是否为管理员，是，显示新增、修改、删除按钮 -->
       <el-row :gutter="10" v-if="dataList.loginUser.roleId === 2">
         <el-col :span="1.5">
           <el-button type="primary" icon="plus" plain @click="openAddDialog"
@@ -50,7 +50,7 @@
           >
         </el-col>
       </el-row>
-
+      <!-- 查询所有用户 -->
       <el-table
         border
         @selection-change="handleSelectionChange"
@@ -116,7 +116,8 @@
         @change="onPageChange"
       />
     </el-card>
-
+    <!-- 功能：用户信息对话框
+    作用：用于编辑用户信息 -->
     <Dialog ref="userDialogRef" :title="title" @onConfirm="saveUser">
       <template #content>
         <el-form :model="dataList.userForm" label-width="100px">
@@ -152,7 +153,7 @@
             <el-input
               type="password"
               v-model="dataList.userForm.password"
-              placeholder="请输入用户昵称"
+              placeholder="请输入用户密码"
             ></el-input>
           </el-form-item>
           <el-form-item label="手机号码">
@@ -232,7 +233,7 @@ const width = ref("50%");
 
 const paginationProps = reactive({
   current: 1,
-  pageSize: 10,
+  pageSize: 5,
   total: 0,
 });
 

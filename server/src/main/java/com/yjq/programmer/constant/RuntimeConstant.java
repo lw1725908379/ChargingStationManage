@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 系统运行时的常量
- * @author 杨杨吖
+ * @author wenLiu
  *
  */
 public class RuntimeConstant {
@@ -14,7 +14,12 @@ public class RuntimeConstant {
 	public static List<String> loginExcludePathPatterns = Arrays.asList(
 			"/user/login",
 			"/user/register",
-			"/photo/view"
+			"/photo/view",
+			"/doc.html",
+			"/swagger-resources/**",
+			"/swagger-ui.html/**",
+			"/webjars/**",
+			"/v2/api-docs"
 	);
 
 }

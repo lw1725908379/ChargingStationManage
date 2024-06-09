@@ -7,9 +7,7 @@ import com.yjq.programmer.dto.StationDTO;
 import java.util.List;
 
 /**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
+ * @author wenLiu
  * @create 2023-12-30 10:40
  */
 public interface IStationService {

@@ -1,0 +1,25 @@
+### save1
+POST {{server_host}}/repair/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "chargeId": "JaVyvgju",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
+
+### save2
+POST {{server_host}}/repair/save
+Content-Type: application/json
+Token: {{acess_token}}
+
+{
+  "chargeId": "JaVyvgju",
+  "chargeName": "120/160kW一体式直流充电机",
+  "description": "充不了电了2222222",
+  "userId": "EoewKcJc",
+  "username": "test"
+}
