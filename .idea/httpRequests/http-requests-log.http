@@ -1,3 +1,21 @@
+POST http://{{server_host}}/user/save
+Content-Type: application/json
+Token: IMeFaRWW
+
+{
+  "headPic": "20240608/1717817487942.jpg",
+  "id": "",
+  "password": "test2123456",
+  "phone": "13700000001",
+  "rate": 0,
+  "roleId": 1,
+  "sex": 3,
+  "token": "IMeFaRWW",
+  "username": "test3"
+}
+
+###
+
 POST http://localhost:8085/warn/save
 Content-Type: application/json
 Token: hEyyjWvh
@@ -704,20 +722,6 @@ Token: {{access_token}}
 }
 
 <> 2024-06-08T142743.200.json
-
-###
-
-POST http://localhost:8085/operator/save
-Content-Type: application/json
-Token: {{access_token}}
-
-{
-  "name": "Example Operator",
-  "description": "This is a sample operator description.",
-  "token": "{{access_token}}"
-}
-
-<> 2024-06-08T142655.200.json
 
 ###
 

@@ -11,11 +11,17 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ChargingStationManage" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="gateway-bck" target="1.8" />
       <module name="server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ChargingStationManage" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="server" options="-parameters" />
     </option>
   </component>

@@ -29,6 +29,7 @@ import { ref, reactive, onMounted } from "vue";
 // 模态框是否显示
 const visible = ref(false);
 
+// 父传子 ： 通过编译器宏操作 接受来自父组件的数据
 defineProps({
   title: {
     type: String,
@@ -61,8 +62,8 @@ const openDialog = () => {
 const closeDialog = () => {
   visible.value = false;
 };
-
-// 当前组件获取父组件传递的事件方法
+// 子传父
+// 通过 defineEmits编译器宏生成emit方法 当前组件获取父组件传递的事件方法
 const emits = defineEmits(["onConfirm", "onCancel"]);
 // 模态框的确定事件
 const onConfirm = () => {
@@ -74,7 +75,8 @@ const onCancel = () => {
   closeDialog();
   emits("onCancel");
 };
-
+// 默认情况下在<script setup>语法糖下组件内部的属性和方法是不开放给父组件访问的
+// 可以通过defineExpose编译宏指定哪些属性和方法允许访问
 defineExpose({
   openDialog,
   closeDialog,

@@ -102,7 +102,13 @@
         </div>
       </div>
     </div>
+    <!-- 底部版权和备案号信息 -->
+    <div class="footer">
+      <p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024104332号</a></p>
+    </div>  
   </div>
+  
+  
 </template>
 
 <script setup>

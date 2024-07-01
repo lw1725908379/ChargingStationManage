@@ -4,6 +4,7 @@ import com.yjq.programmer.bean.CodeMsg;
 import com.yjq.programmer.dto.ResponseDTO;
 import com.yjq.programmer.utils.CommonUtil;
 import io.swagger.annotations.*;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ import java.util.Date;
 @RequestMapping("/photo")
 @RestController
 @Api(tags = "图片管理")
+@Slf4j
 public class PhotoController {
 
 	@Autowired
@@ -56,10 +58,12 @@ public class PhotoController {
 	})
 	@RequestMapping(value="/view")
 	public ResponseEntity<?> viewPhoto(@RequestParam(name="filename", required=true)String filename){
+		logger.info("load file path: {}", uploadPhotoPath + filename);
 		Resource resource = resourceLoader.getResource("file:" + uploadPhotoPath + filename);
 		try {
 			return ResponseEntity.ok(resource);
 		} catch (Exception e) {
+			logger.error("Failed to load photo with filename: {}", uploadPhotoPath + filename, e);
 			return ResponseEntity.notFound().build();
 		}
 	}
@@ -94,7 +98,9 @@ public class PhotoController {
 		if(!CommonUtil.isPhoto(suffix)){
 			return ResponseDTO.errorByMsg(CodeMsg.PHOTO_FORMAT_NOT_CORRECT);
 		}
-		String savePath = uploadPhotoPath + CommonUtil.getFormatterDate(new Date(), "yyyyMMdd") + "\\";
+//		//linux 路径保存有问题
+//		String savePath = uploadPhotoPath + CommonUtil.getFormatterDate(new Date(), "yyyyMMdd") + "\\";
+		String savePath = uploadPhotoPath + CommonUtil.getFormatterDate(new Date(), "yyyyMMdd") + File.separator;
 		File savePathFile = new File(savePath);
 		if(!savePathFile.exists()){
 			//若不存在改目录，则创建目录
@@ -110,7 +116,9 @@ public class PhotoController {
 			e.printStackTrace();
 			return ResponseDTO.errorByMsg(CodeMsg.SAVE_FILE_EXCEPTION);
 		}
-		String filepath = CommonUtil.getFormatterDate(new Date(), "yyyyMMdd") + "/" + filename;
+//		String filepath = CommonUtil.getFormatterDate(new Date(), "yyyyMMdd") + "/" + filename;
+		String filepath = CommonUtil.getFormatterDate(new Date(), "yyyyMMdd") + File.separator + filename;
+		logger.info("保存图片的路径:{}",filepath);
 		return ResponseDTO.successByMsg(filepath, "图片上传成功！");
 	}
 }

@@ -219,6 +219,7 @@
       @onConfirm="removeCharge"
     >
       <template #content>
+        <!-- 模板引用 创建ref对象 通过 `confirmDesc.value = "确定要删除此数据"` 更新响应式变量 `confirmDesc` 的值，被绑定的视图会自动显示最新的文本内容。 -->
         <div
           style="display: flex; justify-content: center; font-size: 16px"
           v-text="confirmDesc"
@@ -578,7 +579,8 @@ const removeCharge = async () => {
   }
 };
 
-// 保存充电桩信息
+
+// 在子组件Dailog中通过 emit('onConfirm') 触发事件后，父组件监听 @onConfirm 事件并执行保存充电桩信息的函数
 const saveCharge = async () => {
   const response = await axiosPostRequest("/charge/save", dataList.chargeForm);
   if (response.code === 0) {

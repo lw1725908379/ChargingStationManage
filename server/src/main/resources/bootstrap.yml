@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: csm-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.43.39.100:8849
+      config:
+        server-addr: 101.43.39.100:8849
+        file-extension: yml
