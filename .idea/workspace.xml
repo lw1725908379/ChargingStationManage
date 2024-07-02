@@ -4,10 +4,26 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="新增“dev”命名空间（Namespace ID: 4a86feba-9c35-4a89-96e8-e524f4758ea0）用于开发环境，确保开发期间的配置与生产环境中的Nacos配置相区分，提高配置管理的效率与安全性。">
+    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="md加密用户密码">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_thirdparty_simple_xml_safe_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_minio_minio_7_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/edu/basic/BasicApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/yjq/programmer/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/basic" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/api-test/user-api.http" />
@@ -79,49 +95,49 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/WORKS/java/projects/ChargingStationManage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.13967973&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.29089028&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;66a5795cba7e1d3d9a08c537ce860f17&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/WORKS/java/projects/ChargingStationManage/basic/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.13967973",
+    "project.structure.side.proportion": "0.29089028",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "66a5795cba7e1d3d9a08c537ce860f17",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\basic\src\main\resources" />
       <recent name="E:\WORKS\java\projects\ChargingStationManage" />
       <recent name="E:\WORKS\java\projects\ChargingStationManage\gateway\src\main\java\com\edu\gateway" />
       <recent name="E:\WORKS\java\projects\ChargingStationManage\gateway\src\main\resources" />
       <recent name="E:\WORKS\java\projects\ChargingStationManage\gateway" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WORKS\java\projects\ChargingStationManage" />
@@ -135,7 +151,7 @@
       <recent name="com.yjq.programmer.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ChargingStationManageApplication">
+  <component name="RunManager" selected="Spring Boot.BasicApplication">
     <configuration name="ChargingStationManageApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yjq.programmer.ChargingStationManageApplication" />
       <module name="server" />
@@ -177,6 +193,13 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="BasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="basic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.basic.BasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ChargingStationManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="server" />
@@ -238,6 +261,7 @@
       <item itemvalue="HTTP 请求.user-api | save" />
       <item itemvalue="Maven.generator" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.BasicApplication" />
       <item itemvalue="Spring Boot.GatewayApplication (2)" />
       <item itemvalue="Spring Boot.GatewayApplication (1)" />
       <item itemvalue="Spring Boot.GatewayApplication" />
@@ -328,6 +352,7 @@
       <workItem from="1719832543801" duration="10315000" />
       <workItem from="1719846035812" duration="1537000" />
       <workItem from="1719886381157" duration="14774000" />
+      <workItem from="1719919598804" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -371,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719901069807</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="md加密用户密码">
+      <created>1719919650724</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719919650724</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +438,8 @@
     <MESSAGE value="借助 nacos 注册csm-server服务 配置管理。&#10;服务器搭建,项目部署,ip:www.wenliu.site,工信部备案,公安备案." />
     <MESSAGE value="网关模块更新：&#10;优化了 NGINX 的请求转发逻辑，以确保所有上游请求均由 Gateway 处理。&#10;在 Gateway 中增加了负载均衡配置，以实现请求的有效分发到 Server 模块。&#10;Server 模块更新：&#10;修改了返回逻辑，确保在 checkLogin 接口中不返回用户密码，增强了用户数据的安全性。" />
     <MESSAGE value="新增“dev”命名空间（Namespace ID: 4a86feba-9c35-4a89-96e8-e524f4758ea0）用于开发环境，确保开发期间的配置与生产环境中的Nacos配置相区分，提高配置管理的效率与安全性。" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增“dev”命名空间（Namespace ID: 4a86feba-9c35-4a89-96e8-e524f4758ea0）用于开发环境，确保开发期间的配置与生产环境中的Nacos配置相区分，提高配置管理的效率与安全性。" />
+    <MESSAGE value="md加密用户密码" />
+    <option name="LAST_COMMIT_MESSAGE" value="md加密用户密码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
