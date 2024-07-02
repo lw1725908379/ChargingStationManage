@@ -267,6 +267,7 @@ public class UserServiceImpl implements IUserService {
         //密码置空
         User user = userList.get(0);
         user.setPassword("");
+        //TODO: 用jwt util 颁发令牌
         // 生成登录token并存入Redis中
         UserDTO selectedUserDto = CopyUtil.copy(user, UserDTO.class);
         String token = UuidUtil.getShortUuid();
