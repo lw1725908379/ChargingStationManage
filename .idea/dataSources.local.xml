@@ -32,8 +32,8 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="@101.43.39.100" uuid="b0b6d727-b6f7-49a4-83d0-961cc786ad59">
-      <database-info product="MySQL" version="5.7.44" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="5.7.44" exact-driver-version="8.2">
+    <data-source name="db_csm@101.43.39.100" uuid="2b38ba3f-9ed2-429b-ac48-05d13b6499a0">
+      <database-info product="MySQL" version="5.7.44-log" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="5.7.44" exact-driver-version="8.2">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -42,7 +42,10 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="db_charging_station_manage" />
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="db_csm" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>

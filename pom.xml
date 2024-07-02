@@ -10,6 +10,7 @@
 
     <modules>
         <module>server</module>
+        <module>gateway</module>
     </modules>
 
     <parent>
@@ -150,6 +151,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>

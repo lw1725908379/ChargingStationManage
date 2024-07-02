@@ -264,8 +264,11 @@ public class UserServiceImpl implements IUserService {
         if(userList == null || userList.size() != 1){
             return ResponseDTO.errorByMsg(CodeMsg.USERNAME_PASSWORD_ERROR);
         }
+        //密码置空
+        User user = userList.get(0);
+        user.setPassword("");
         // 生成登录token并存入Redis中
-        UserDTO selectedUserDto = CopyUtil.copy(userList.get(0), UserDTO.class);
+        UserDTO selectedUserDto = CopyUtil.copy(user, UserDTO.class);
         String token = UuidUtil.getShortUuid();
         selectedUserDto.setToken(token);
         //把token存入redis中 有效期1小时
@@ -284,12 +287,12 @@ public class UserServiceImpl implements IUserService {
         if(userDTO == null || CommonUtil.isEmpty(userDTO.getToken())){
             return ResponseDTO.errorByMsg(CodeMsg.USER_SESSION_EXPIRED);
         }
+
         ResponseDTO<UserDTO> responseDTO = getLoginUser(userDTO.getToken());
         if(responseDTO.getCode() != 0){
             return responseDTO;
         }
         logger.info("获取到的登录信息={}", responseDTO.getData());
-        // TODO DTO把密码返回了...要设置个userVO
         return ResponseDTO.success(responseDTO.getData());
     }
 
