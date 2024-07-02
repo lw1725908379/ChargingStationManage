@@ -17,6 +17,7 @@ import com.yjq.programmer.utils.CommonUtil;
 import com.yjq.programmer.utils.CopyUtil;
 import com.yjq.programmer.utils.UuidUtil;
 import com.yjq.programmer.utils.ValidateEntityUtil;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -83,6 +84,10 @@ public class UserServiceImpl implements IUserService {
         }
         user.setId(UuidUtil.getShortUuid());
         user.setRoleId(RoleEnum.USER.getCode());
+        // 用户密码 md 加密
+        //TODO:后续修改表结构，添加salt字段，利用salt+password md加密
+        String md5Hex = DigestUtils.md5Hex(userDTO.getPassword());
+        user.setPassword(md5Hex);
         if (userMapper.insertSelective(user) == 0) {
             return ResponseDTO.errorByMsg(CodeMsg.USER_REGISTER_ERROR);
         }
@@ -257,11 +262,18 @@ public class UserServiceImpl implements IUserService {
         if(CommonUtil.isEmpty(userDTO.getPassword())){
             return ResponseDTO.errorByMsg(CodeMsg.PASSWORD_EMPTY);
         }
-        // 对比昵称和密码是否正确
+        // 根据用户名查询用户
         UserExample userExample = new UserExample();
-        userExample.createCriteria().andUsernameEqualTo(userDTO.getUsername()).andPasswordEqualTo(userDTO.getPassword());
+        userExample.createCriteria().andUsernameEqualTo(userDTO.getUsername());
         List<User> userList = userMapper.selectByExample(userExample);
-        if(userList == null || userList.size() != 1){
+
+        if(userList == null || userList.size() != 1 ){
+            return ResponseDTO.errorByMsg(CodeMsg.USERNAME_PASSWORD_ERROR);
+        }
+        // 用户输入密码转化为md5再比较数据库
+        String md5Hex = DigestUtils.md5Hex(userDTO.getPassword().toString());
+        if (!userList.get(0).getPassword().equals(md5Hex)) {
+            logger.info("密码错误，输入密码:{},数据库存储密码:{}",md5Hex,userList.get(0).getPassword());
             return ResponseDTO.errorByMsg(CodeMsg.USERNAME_PASSWORD_ERROR);
         }
         //密码置空
