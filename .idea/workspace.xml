@@ -4,26 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="md加密用户密码">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_thirdparty_simple_xml_safe_2_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_17_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_minio_minio_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/edu/basic/BasicApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="basic模块建立&#10;basic服务注册以及配置">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/edu/basic/config/MinIOConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/edu/basic/config/MinIOConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/edu/basic/service/FileStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/edu/basic/service/impl/MinIOFileStorageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/resources/META-INF/spring.factories" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +34,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="HTML File" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -352,7 +347,7 @@
       <workItem from="1719832543801" duration="10315000" />
       <workItem from="1719846035812" duration="1537000" />
       <workItem from="1719886381157" duration="14774000" />
-      <workItem from="1719919598804" duration="3417000" />
+      <workItem from="1719919598804" duration="5312000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -403,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719919650724</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="basic模块建立&#10;basic服务注册以及配置">
+      <created>1719928480059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719928480059</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +441,8 @@
     <MESSAGE value="网关模块更新：&#10;优化了 NGINX 的请求转发逻辑，以确保所有上游请求均由 Gateway 处理。&#10;在 Gateway 中增加了负载均衡配置，以实现请求的有效分发到 Server 模块。&#10;Server 模块更新：&#10;修改了返回逻辑，确保在 checkLogin 接口中不返回用户密码，增强了用户数据的安全性。" />
     <MESSAGE value="新增“dev”命名空间（Namespace ID: 4a86feba-9c35-4a89-96e8-e524f4758ea0）用于开发环境，确保开发期间的配置与生产环境中的Nacos配置相区分，提高配置管理的效率与安全性。" />
     <MESSAGE value="md加密用户密码" />
-    <option name="LAST_COMMIT_MESSAGE" value="md加密用户密码" />
+    <MESSAGE value="basic模块建立&#10;basic服务注册以及配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic模块建立&#10;basic服务注册以及配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
