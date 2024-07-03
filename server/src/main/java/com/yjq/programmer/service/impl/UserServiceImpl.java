@@ -148,6 +148,7 @@ public class UserServiceImpl implements IUserService {
         if (!validate.getCode().equals(CodeMsg.SUCCESS.getCode())) {
             return ResponseDTO.errorByMsg(validate);
         }
+        userDTO.setPassword(DigestUtils.md5Hex(userDTO.getPassword()));
         User user = CopyUtil.copy(userDTO, User.class);
         if(CommonUtil.isEmpty(user.getId())) {
             // 添加操作

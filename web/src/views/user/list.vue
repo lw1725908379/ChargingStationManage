@@ -269,6 +269,7 @@ const dataList = reactive({
     id: "",
     username: "",
     password: "",
+    // common/no_image.jpg
     headPic: "common/no_image.jpg",
     phone: "",
     roleId: 1,
@@ -316,7 +317,8 @@ const openAddDialog = () => {
     id: "",
     username: "",
     password: "",
-    headPic: "common/no_image.jpg",
+    // common/no_image.jpg
+    headPic: "http://101.43.39.100:9000/csm/common/no_image.jpg",
     phone: "",
     roleId: 1,
     sex: 3,

@@ -3,6 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/common" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gateway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/minio-demo" vcs="Git" />
   </component>
 </project>

@@ -12,6 +12,7 @@
         <module>server</module>
         <module>gateway</module>
         <module>basic</module>
+        <module>common</module>
     </modules>
 
     <parent>
@@ -23,8 +24,8 @@
 
     <properties>
         <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
-        <spring.cloud.version>Hoxton.SR8</spring.cloud.version> <!-- 添加 Spring Cloud 版本 -->
-        <alibaba.cloud.version>2.2.5.RELEASE</alibaba.cloud.version> <!-- 添加 Alibaba Cloud 版本 -->
+        <spring.cloud.version>Hoxton.SR8</spring.cloud.version>
+        <alibaba.cloud.version>2.2.5.RELEASE</alibaba.cloud.version>
         <hutool.version>4.6.10</hutool.version>
         <mysql.connector.version>8.0.26</mysql.connector.version>
         <druid.version>1.1.19</druid.version>
@@ -41,6 +42,8 @@
         <java.version>1.8</java.version>
         <!--addition-->
         <jwt.version>0.9.1</jwt.version>
+        <ali.core.version>4.1.1</ali.core.version>
+        <ali.green.version>3.4.1</ali.green.version>
 
     </properties>
 
@@ -171,8 +174,17 @@
                 <version>${jwt.version}</version>
             </dependency>
 
-
-
+            <!--aliyun 文本、图片审核-->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${ali.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-green</artifactId>
+                <version>${ali.green.version}</version>
+            </dependency>
 
 
         </dependencies>

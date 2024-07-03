@@ -15,6 +15,13 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!--引入basic MinIo-->
+        <dependency>
+            <groupId>com.yjq.programmer</groupId>
+            <artifactId>basic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- Spring Boot Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
