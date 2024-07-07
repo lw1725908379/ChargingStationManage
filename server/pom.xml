@@ -14,12 +14,40 @@
     <name>server</name>
     <packaging>jar</packaging>
 
+    <properties>
+        <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
+        <hutool.version>4.6.10</hutool.version>
+        <mysql.connector.version>8.0.26</mysql.connector.version>
+        <druid.version>1.1.19</druid.version>
+        <fastjson.version>1.2.31</fastjson.version>
+        <pagehelper.version>1.2.13</pagehelper.version>
+        <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
+        <junit.version>4.12</junit.version>
+        <knife4j.version>3.0.2</knife4j.version>
+        <lombok.version>1.18.24</lombok.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+    </properties>
+
     <dependencies>
-        <!--引入basic MinIo-->
+        <dependency>
+            <groupId>com.lw</groupId>
+            <artifactId>feign-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--引入 basic-->
         <dependency>
             <groupId>com.yjq.programmer</groupId>
             <artifactId>basic</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--引入 common-->
+        <dependency>
+            <groupId>com.lw</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- Spring Boot Dependencies -->
@@ -42,35 +70,42 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
         </dependency>
 
         <!-- MyBatis Dependencies -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.version}</version>
         </dependency>
 
         <!-- Utility Dependencies -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -78,9 +113,16 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
+        <!-- Documentation Dependencies -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
         <!-- Documentation Dependencies -->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
@@ -91,23 +133,30 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>HdrHistogram</artifactId>
+                    <groupId>org.hdrhistogram</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.yjq.programmer.ChargingStationManageApplication</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-</project>
+
+
+<build>
+<plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <mainClass>com.yjq.programmer.ChargingStationManageApplication</mainClass>
+        </configuration>
+    </plugin>
+</plugins>
+</build>
+        </project>

@@ -7,29 +7,34 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="server" />
         <module name="minio-demo" />
-        <module name="basic" />
+        <module name="server" />
         <module name="common" />
+        <module name="utils" />
+        <module name="basic" />
         <module name="gateway" />
+        <module name="feign-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="basic" target="1.8" />
       <module name="ChargingStationManage" target="1.8" />
       <module name="common" target="1.8" />
+      <module name="feign-api" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="gateway-bck" target="1.8" />
       <module name="minio-demo" target="1.8" />
       <module name="server" target="1.8" />
       <module name="test" target="1.8" />
+      <module name="utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ChargingStationManage" options="-parameters" />
+      <module name="ChargingStationManage" options="" />
       <module name="basic" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="server" options="-parameters" />
     </option>

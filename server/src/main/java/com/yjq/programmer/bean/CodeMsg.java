@@ -64,6 +64,7 @@ public class CodeMsg {
     public static CodeMsg UPLOAD_PHOTO_SUFFIX_ERROR = new CodeMsg(-7, "图片格式不正确！");
     public static CodeMsg PHOTO_SURPASS_MAX_SIZE = new CodeMsg(-8, "上传的图片不能超过2MB！");
     public static CodeMsg PHOTO_FORMAT_NOT_CORRECT = new CodeMsg(-9, "上传的图片格式不正确！");
+
     public static CodeMsg SAVE_FILE_EXCEPTION = new CodeMsg(-10, "保存文件异常！");
     public static CodeMsg FILE_EXPORT_ERROR = new CodeMsg(-11, "文件导出失败！");
     public static CodeMsg SYSTEM_ERROR = new CodeMsg(-12, "系统出现了错误，请联系管理员！");
@@ -71,6 +72,7 @@ public class CodeMsg {
     public static CodeMsg CAPTCHA_EXPIRED = new CodeMsg(-14, "验证码已过期，请刷新验证码！");
     public static CodeMsg COMMON_ERROR = new CodeMsg(-15, "");
     public static CodeMsg PHOTO_EMPTY = new CodeMsg(-16, "上传的图片不能为空！");
+    public static CodeMsg PHOTO_ILLEGAL_IMAGE_UPLOAD = new CodeMsg(-17, "禁止上传违规图片！");
 
 
     //用户管理错误码
@@ -141,5 +143,8 @@ public class CodeMsg {
     public static CodeMsg RATE_ADD_ERROR = new CodeMsg(-10000, "信誉积分记录添加失败，请联系管理员！");
     public static CodeMsg RATE_EDIT_ERROR = new CodeMsg(-10001, "信誉积分记录编辑失败，请联系管理员！");
     public static CodeMsg RATE_DELETE_ERROR = new CodeMsg(-10002, "信誉积分记录删除失败，请联系管理员！");
+
+    // 微服务
+    public static CodeMsg  FEIGN_FAIL_LOAD_DATA = new CodeMsg(-100000, "获取数据失败！");
 
 }
