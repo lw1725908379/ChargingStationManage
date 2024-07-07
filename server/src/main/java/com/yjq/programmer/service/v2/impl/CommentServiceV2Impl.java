@@ -1,13 +1,19 @@
-package com.yjq.programmer.service.impl;
+package com.yjq.programmer.service.v2.impl;
 
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.lw.utils.common.SensitiveWordUtil;
 import com.yjq.programmer.bean.CodeMsg;
 import com.yjq.programmer.dao.CommentMapper;
+import com.yjq.programmer.dao.SensitiveMapper;
 import com.yjq.programmer.dao.UserMapper;
 import com.yjq.programmer.domain.*;
-import com.yjq.programmer.dto.*;
-import com.yjq.programmer.service.ICommentService;
+import com.yjq.programmer.dto.CommentDTO;
+import com.yjq.programmer.dto.PageDTO;
+import com.yjq.programmer.dto.ResponseDTO;
+import com.yjq.programmer.dto.UserDTO;
+import com.yjq.programmer.service.v2.ICommentServiceV2;
 import com.yjq.programmer.utils.CommonUtil;
 import com.yjq.programmer.utils.CopyUtil;
 import com.yjq.programmer.utils.UuidUtil;
@@ -19,18 +25,23 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 
 @Service
 @Transactional
-public class CommentServiceImpl implements ICommentService {
+public class CommentServiceV2Impl implements ICommentServiceV2 {
 
     @Resource
     private CommentMapper commentMapper;
 
     @Resource
     private UserMapper userMapper;
+
+    @Resource
+    private SensitiveMapper sensitiveMapper;
+
 
 
     /**
@@ -90,8 +101,13 @@ public class CommentServiceImpl implements ICommentService {
         // 进行统一表单验证
         CodeMsg validate = ValidateEntityUtil.validate(commentDTO);
         if (!validate.getCode().equals(CodeMsg.SUCCESS.getCode())) {
-            return ResponseDTO.errorByMsg(validate);
+            return ResponseDTO.errorByMsg(CodeMsg.COMMENT_EDIT_ERROR);
         }
+        // 评论内容审核
+        if (!handleSensitiveScan(commentDTO.getContent(),commentDTO)) {
+            return ResponseDTO.errorByMsg(CodeMsg.COMMENT_CONTAIN_SENSITIVE);
+        }
+
         Comment comment = CopyUtil.copy(commentDTO, Comment.class);
         if(CommonUtil.isEmpty(comment.getId())) {
             // 添加操作
@@ -108,6 +124,22 @@ public class CommentServiceImpl implements ICommentService {
             }
         }
         return ResponseDTO.successByMsg(true, "保存成功！");
+    }
+
+
+    private boolean handleSensitiveScan(String content, CommentDTO commentDTO) {
+        // 查询所有敏感词
+        List<Sensitive> sensitives = sensitiveMapper
+                .selectList(Wrappers.<Sensitive>lambdaQuery().select(Sensitive::getSensitives));
+        List<String> sensitivesList = sensitives.stream().map(Sensitive::getSensitives).collect(Collectors.toList());
+        //  初始化敏感词
+        SensitiveWordUtil.initMap(sensitivesList);
+        // 匹配单词
+        Map<String, Integer> map = SensitiveWordUtil.matchWords(content);
+        if (map.size()>0) {
+            return true;
+        }
+        return false;
     }
 
     /**

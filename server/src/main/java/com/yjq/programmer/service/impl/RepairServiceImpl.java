@@ -27,12 +27,7 @@ import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
- * @create 2023-12-31 10:09
- */
+
 @Service
 @Transactional
 public class RepairServiceImpl implements IRepairService {

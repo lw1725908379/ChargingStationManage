@@ -30,7 +30,7 @@ import java.util.UUID;
  *
  * @author wenLiu
  */
-@RequestMapping("v2/photo")
+@RequestMapping("/v2/photo")
 @RestController
 @Api(tags = "图片管理")
 @Slf4j

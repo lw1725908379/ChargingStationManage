@@ -133,6 +133,7 @@ public class CodeMsg {
     public static CodeMsg COMMENT_ADD_ERROR = new CodeMsg(-8000, "留言信息创建失败，请联系管理员！");
     public static CodeMsg COMMENT_EDIT_ERROR = new CodeMsg(-8001, "留言信息编辑失败，请联系管理员！");
     public static CodeMsg COMMENT_DELETE_ERROR = new CodeMsg(-8002, "留言信息删除失败，请联系管理员！");
+    public static CodeMsg COMMENT_CONTAIN_SENSITIVE = new CodeMsg(-8003, "留言信息存在敏感词汇，请重新留言！");
 
     // 告警管理错误码
     public static CodeMsg WARN_ADD_ERROR = new CodeMsg(-9000, "告警信息创建失败，请联系管理员！");

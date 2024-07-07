@@ -26,12 +26,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author 杨杨吖
- * @QQ 823208782
- * @WX yjqi12345678
- * @create 2023-12-31 12:14
- */
+
 @Service
 @Transactional
 public class WarnServiceImpl implements IWarnService {
