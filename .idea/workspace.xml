@@ -4,61 +4,507 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="图片上传至 minio 代码实现">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_hankcs_hanlp_portable_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_api_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_collectionschema_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_core_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_runtime_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/v2/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/SensitiveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Sensitive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/v2/ICommentServiceV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/v2/impl/CommentServiceV2Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/AppJwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/BCrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/Base64Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/BurstUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/Compute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/DESUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/DelayedTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/IdsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/JdkSerializeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/MD5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/ReflectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/SensitiveWordUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/SimHashUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/SnowflakeIdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/UrlSignUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/ZipUtils.java" afterDir="false" />
+    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="使用DFA算法进行敏感词管理以审核用户评论内容。">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_43.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/annotation/ValidateEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/constant/RuntimeConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/tess4j/Tess4jClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/charge_services/IChargeServicesClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/charge_services/fallback/IChargeServicesClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/comment/ICommentClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/comment/fallback/ICommentClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/order/IOrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/order/fallback/IOrderClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/photo/IPhotoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/photo/fallback/IPhotoClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/system_services/IUserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/system_services/fallback/IUserClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/edu/gateway/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/schedule/dtos/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/schedule/pojos/Taskinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/schedule/pojos/TaskinfoLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/ChargeServicesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/config/InitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/AppointController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/ChargeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/OperatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/RepairController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/StationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/dao/AppointMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/dao/ChargeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/dao/OperatorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/dao/RepairMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/dao/StationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/feign/ChargeServicesClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/IAppointService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/IChargeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/IOperatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/IRepairService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/IStationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/AppointServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/ChargeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/OperatorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/RepairServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/StationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/mapper/ChargeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/mapper/OperatorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/mapper/RepairMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/mapper/StationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/charge-services/src/test/java/cn/edu/lw/chargeservices/ChargeServicesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/CommentApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/config/InitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/controller/v2/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/controller/v2/PhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/dao/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/feign/CommentClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/ICommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/SensitiveMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/v2/ICommentServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/v2/impl/CommentServiceV2Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/comment/src/test/java/com/edu/lw/comment/CommentApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/config/InitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/dao/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/feign/OrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/service/IOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/java/com/edu/lw/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/order/src/test/java/com/edu/lw/order/OrderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/PhotoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/config/InitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/controller/PhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/controller/v2/PhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/feign/PhotoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/photo/src/test/java/com/edu/lw/photo/PhotoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/schedule/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/schedule/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/ScheduleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/schedule/src/test/java/com/edu/lw/schedule/ScheduleApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/SystemServicesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/controller/RateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/controller/WarnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/dao/RateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/dao/WarnMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/feign/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/service/IWarnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/service/impl/WarnServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/resources/mapper/RateMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/main/resources/mapper/WarnMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/system-services/src/test/java/cn/edu/lw/systemservices/SystemServicesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/edu/lw/test/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/test/java/com/edu/lw/test/TestApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/CommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/CopyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/UuidUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/ValidateEntityUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_9_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_9_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_9_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_13_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Management interface.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/appoint-api.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/http-client.env.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/operator-api.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/order-api.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/repair.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/station-api.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/user-api.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/warn.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-button-group.0687c171.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-card.76ee2eae.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-image-viewer.e590c08a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-input-number.82b1d163.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-input.19de0de7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-table-column.28196a21.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/el-tag.7c2b6662.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/format.846b3d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/format.9042f965.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.32bcb6f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.3a362518.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.74508c0f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.8fc91b90.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.9456bf99.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.abce5eea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.c98eeb74.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.ccf2c77f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.d020faa0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index.eb9d0994.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.0cab4693.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.16502c0b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.1f1127b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.2c8a2644.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.3eab534a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.405837c6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.4a721d35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.674bf163.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.6c0cac48.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.81caf311.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.88b7d6f9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.9d18c52b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.b25d3a87.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.bf115f65.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.c0064204.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.c33a9877.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.fa09d44e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/list.fde46852.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/logo.6d062b9c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/logo.98d6e6d5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/message.10613fe1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/basic/IBasicClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/server/IServerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/server/fallback/IServerClientFallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom-bck.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom-v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/-bck.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bck-pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/bean/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/bean/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/v2/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/v2/PhotoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/RepairServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/RepairServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/WarnServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/WarnServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/ChargingStationManageApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/annotation/ValidateEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/bean/CodeMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/config/CorsFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/config/InitConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/constant/RuntimeConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/AppointController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/ChargeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/CommentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/OperatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/PhotoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/RepairController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/StationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/WarnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/v2/CommentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/controller/v2/PhotoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/AppointMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/ChargeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/CommentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/OperatorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/RateMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/RepairMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/SensitiveMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/StationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dao/WarnMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Appoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/AppointExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Charge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/ChargeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/CommentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/OperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/OrderExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Rate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/RateExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Repair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/RepairExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Sensitive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Station.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/StationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/UserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/Warn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/domain/WarnExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/AppointDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/ChargeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/CommentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/OperatorDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/OrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/PageDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/RateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/RepairDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/ResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/StationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/dto/WarnDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/AppointStateEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/ChargeStateEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/OrderStateEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RateTypeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RepairStateEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/enums/RoleEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/feign/ServerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/interceptor/LoginInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IAppointService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IChargeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/ICommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IOperatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IRepairService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IStationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/IWarnService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/AppointServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/ChargeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/CommentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/OperatorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/RepairServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/StationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/WarnServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/v2/ICommentServiceV2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/v2/impl/CommentServiceV2Impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/CommonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/CopyUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/UuidUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/utils/ValidateEntityUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/generator/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/AppointMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/ChargeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/OperatorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/RateMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/RepairMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/StationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/mapper/WarnMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20231230/1703898977960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20231230/1703899051488.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20231230/1703907402266.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240103/1704276795530.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704595122454.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704595426817.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704595496742.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704595570324.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704595932512.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704606273212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704606355074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704606408047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240107/1704606800866.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240113/1705140648540.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240113/1705140656572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240113/1705140767218.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705198805990.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705198814663.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705198823257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705198924332.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705198932357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705199005067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705199317836.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705201657195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705208360214.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705238605117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705238817720.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705239194975.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705239365459.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240114/1705239536722.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240607/1717767844376.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717776324136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717817487942.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717829600960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717829656874.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717829818997.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717829917034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830002021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830104732.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830156688.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830206128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830269916.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830341294.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240608/1717830360255.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240628/1719573257859.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240628/1719573303503.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719637225163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719641644814.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719641861361.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719641934585.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719642211594.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719642334741.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719642476632.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719642520892.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719661625297.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719661944261.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719662134352.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719662134505.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719663727010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/20240629/1719663770675.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/upload/photo/common/no_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/generator/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/AppointMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/ChargeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/CommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/OperatorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/RateMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/RepairMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/StationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/mapper/WarnMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20231230/1703898977960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20231230/1703899051488.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20231230/1703907402266.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240103/1704276795530.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704595122454.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704595426817.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704595496742.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704595570324.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704595932512.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704606273212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704606355074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704606408047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240107/1704606800866.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240113/1705140648540.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240113/1705140656572.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240113/1705140767218.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705198805990.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705198814663.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705198823257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705198924332.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705198932357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705199005067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705199317836.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705201657195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705208360214.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705238605117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705238817720.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705239194975.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705239365459.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240114/1705239536722.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240607/1717767844376.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717776324136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717817487942.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717829600960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717829656874.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717829818997.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717829917034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830002021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830104732.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830156688.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830206128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830269916.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830341294.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/20240608/1717830360255.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/upload/photo/common/no_image.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/UtilsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/test/java/com/lw/utils/UtilsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.env.development" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.env.production" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/fastcgi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/fastcgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/koi-win" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/mime.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/nginx - 副本.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/scgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/uwsgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/conf/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/geo2nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/unicode2nginx/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/unicode2nginx/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/vim/indent/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/contrib/vim/syntax/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/CHANGES.ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/OpenSSL.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/PCRE.LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/docs/zlib.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/html/50x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/nginx-1.18.0/nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/AsideMenu/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/Dialog/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/Header/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/directive/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/directive/modules/adaptive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/directive/modules/waterMarker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/styles/reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/util/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/appoint/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/charge/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/comment/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/layout/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/login/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/operator/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/order/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/repair/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/station/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/system/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/user/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/warn/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/vite.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +523,13 @@
         <option value="Enum" />
         <option value="HTML File" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/model" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/api-test/user-api.http" />
@@ -142,7 +588,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/WORKS/java/projects/ChargingStationManage/utils/src/main/java/com/lw/utils",
+    "last_opened_file_path": "E:/WORKS/java/projects/ChargingStationManage/model/src/main/java/com/edu/lw/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,8 +598,8 @@
     "project.structure.proportion": "0.13967973",
     "project.structure.side.proportion": "0.29089028",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "c07baf6e4c127f543b12696a189bc33b",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Issue.Navigation",
+    "spring.configuration.checksum": "60b4c6cd273d43bdfb82b530240c1770",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -167,26 +613,28 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\utils\src\main\java\com\lw\utils" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\src\main\resources" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\common\src\main\resources" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\common\src\main\java\com\lw\common" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\common\src\main\java\com\edu\common" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\model\src\main\java\com\edu\lw\model" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\photo\src\main\resources" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\charge-services\src\main\resources" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\system-services\src\main\resources" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\system-services\src\main\java\cn\edu\lw\systemservices" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\basic\src\main\resources" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage" />
-      <recent name="E:\WORKS\java\projects\ChargingStationManage\db" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\user\src\main\resources\mapper" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\warn\src\main\resources\mapper" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\station\src\main\resources\mapper" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\repair\src\main\resources\mapper" />
+      <recent name="E:\WORKS\java\projects\ChargingStationManage\server\operator\src\main\resources\mapper" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.edu.basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yjq.programmer.service.v2.impl" />
-      <recent name="com.yjq.programmer.service.v2" />
-      <recent name="com.yjq.programmer.controller.v2" />
-      <recent name="com.yjq.programmer.controller" />
-      <recent name="com.yjq.programmer.constant" />
+      <recent name="com.edu.lw.schedule.feign" />
+      <recent name="cn.edu.lw.chargeservices.service.impl" />
+      <recent name="cn.edu.lw.chargeservices.service" />
+      <recent name="cn.edu.lw.chargeservices.dao" />
+      <recent name="cn.edu.lw.chargeservices.controller" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ChargingStationManageApplicationTest.greeTextScan">
@@ -279,9 +727,37 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="AppointApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="appoint" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.appoint.AppointApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="basic" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.basic.BasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChargeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="charge" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.charge.ChargeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChargeServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="charge-services" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.lw.chargeservices.ChargeServicesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChargingStationManageApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.ChargingStationManageApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -299,9 +775,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="comment" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.comment.CommentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="operator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.operator.OperatorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="photo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.photo.PhotoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScheduleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="schedule" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.schedule.ScheduleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.system.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="system-services" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.lw.systemservices.SystemServicesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarnApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="warn" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.lw.warn.WarnApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -319,7 +851,7 @@
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="null" />
       <option name="file" value="" />
-      <option name="workingDir" value="E:\WORKS\java\projects\ChargingStationManage\server\src" />
+      <option name="workingDir" value="E:\WORKS\java\projects\ChargingStationManage\server" />
       <option name="debuggerType" value="1" />
       <option name="params" value="" />
       <option name="charset" value="UTF-8" />
@@ -334,6 +866,18 @@
       <item itemvalue="JUnit.ChargingStationManageApplicationTest.testScanText" />
       <item itemvalue="Maven.generator" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.ScheduleApplication" />
+      <item itemvalue="Spring Boot.ChargeServicesApplication" />
+      <item itemvalue="Spring Boot.CommentApplication" />
+      <item itemvalue="Spring Boot.PhotoApplication" />
+      <item itemvalue="Spring Boot.SystemServicesApplication" />
+      <item itemvalue="Spring Boot.SystemApplication" />
+      <item itemvalue="Spring Boot.WarnApplication" />
+      <item itemvalue="Spring Boot.AppointApplication" />
+      <item itemvalue="Spring Boot.ChargeApplication" />
+      <item itemvalue="Spring Boot.OperatorApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.ChargingStationManageApplication (1)" />
       <item itemvalue="Spring Boot.BasicApplication" />
       <item itemvalue="Spring Boot.GatewayApplication (2)" />
       <item itemvalue="Spring Boot.ChargingStationManageApplication" />
@@ -432,7 +976,16 @@
       <workItem from="1720253739257" duration="4017000" />
       <workItem from="1720266825259" duration="6691000" />
       <workItem from="1720316196154" duration="15000" />
-      <workItem from="1720351867844" duration="4855000" />
+      <workItem from="1720351867844" duration="6986000" />
+      <workItem from="1720530209581" duration="1416000" />
+      <workItem from="1720531817799" duration="39000" />
+      <workItem from="1720531932196" duration="7131000" />
+      <workItem from="1720587568267" duration="2306000" />
+      <workItem from="1720920883413" duration="19782000" />
+      <workItem from="1720950088122" duration="1900000" />
+      <workItem from="1720958081132" duration="6399000" />
+      <workItem from="1721370218194" duration="2358000" />
+      <workItem from="1721375322247" duration="882000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -511,7 +1064,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720353031311</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="使用DFA算法进行敏感词管理以审核用户评论内容。">
+      <created>1720356788814</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720356788814</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,21 +1114,12 @@
     <MESSAGE value="代码实现basic模块中MinIOFileStorageService：Minio上传图片和html文件。" />
     <MESSAGE value="图片上传至 minio 代码实现" />
     <MESSAGE value="实现图片上传到MinIO，同时集成阿里云内容安全接口进行违规检测，并使用异步调用优化性能。" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现图片上传到MinIO，同时集成阿里云内容安全接口进行违规检测，并使用异步调用优化性能。" />
+    <MESSAGE value="使用DFA算法进行敏感词管理以审核用户评论内容。" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用DFA算法进行敏感词管理以审核用户评论内容。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java</url>
-          <line>268</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/yjq/programmer/service/impl/UserServiceImpl.java</url>
-          <line>274</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/basic/src/main/java/com/edu/basic/controller/FileController.java</url>
           <line>19</line>

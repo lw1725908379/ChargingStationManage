@@ -14,10 +14,18 @@
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/feign-api/pom.xml" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
+        <option value="$PROJECT_DIR$/server/comment/pom.xml" />
+        <option value="$PROJECT_DIR$/server/order/pom.xml" />
+        <option value="$PROJECT_DIR$/server/photo/pom.xml" />
+        <option value="$PROJECT_DIR$/server/user/pom.xml" />
+        <option value="$PROJECT_DIR$/server/charge-services/pom.xml" />
+        <option value="$PROJECT_DIR$/server/system-services/pom.xml" />
+        <option value="$PROJECT_DIR$/server/schedule/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/server/warn/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
       </set>
     </option>

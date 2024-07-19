@@ -3,8 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <modules>
+        <module>charge-services</module>
+        <module>comment</module>
+        <module>order</module>
+        <module>photo</module>
+        <module>system-services</module>
+    </modules>
+
     <parent>
-        <groupId>com.yjq.programmer</groupId>
+        <groupId>com.edu.lw</groupId>
         <artifactId>ChargingStationManage</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -12,7 +20,7 @@
 
     <artifactId>server</artifactId>
     <name>server</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
@@ -34,6 +42,23 @@
     <dependencies>
         <dependency>
             <groupId>com.lw</groupId>
+            <artifactId>feign-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lw</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--model-->
+        <dependency>
+            <groupId>com.edu.lw</groupId>
+            <artifactId>model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--        utils-->
+        <dependency>
+            <groupId>com.lw</groupId>
             <artifactId>utils</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -44,7 +69,7 @@
         </dependency>
         <!--引入 basic-->
         <dependency>
-            <groupId>com.yjq.programmer</groupId>
+            <groupId>com.edu.lw</groupId>
             <artifactId>basic</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -164,7 +189,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
-            <mainClass>com.yjq.programmer.ChargingStationManageApplication</mainClass>
+            <mainClass>com.edu.lw.ChargingStationManageApplication</mainClass>
         </configuration>
     </plugin>
 </plugins>

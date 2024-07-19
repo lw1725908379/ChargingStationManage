@@ -7,37 +7,72 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="system-services" />
         <module name="minio-demo" />
-        <module name="server" />
+        <module name="test" />
+        <module name="photo" />
+        <module name="feign-api" />
+        <module name="schedule" />
         <module name="common" />
         <module name="utils" />
+        <module name="charge-services" />
+        <module name="comment" />
+        <module name="model" />
         <module name="basic" />
         <module name="gateway" />
-        <module name="feign-api" />
+        <module name="order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="appoint" target="1.8" />
       <module name="basic" target="1.8" />
+      <module name="charge" target="1.8" />
+      <module name="charge-services" target="1.8" />
       <module name="ChargingStationManage" target="1.8" />
+      <module name="comment" target="1.8" />
       <module name="common" target="1.8" />
       <module name="feign-api" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="gateway-bck" target="1.8" />
       <module name="minio-demo" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="models" target="1.8" />
+      <module name="operator" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="photo" target="1.8" />
+      <module name="repair" target="1.8" />
+      <module name="schedule" target="1.8" />
       <module name="server" target="1.8" />
+      <module name="station" target="1.8" />
+      <module name="system" target="1.8" />
+      <module name="system-servces" target="1.8" />
+      <module name="system-services" target="1.8" />
       <module name="test" target="1.8" />
       <module name="utils" target="1.8" />
+      <module name="warn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ChargingStationManage" options="" />
+      <module name="appoint" options="-parameters" />
       <module name="basic" options="-parameters" />
+      <module name="charge" options="-parameters" />
+      <module name="charge-services" options="-parameters" />
+      <module name="comment" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
-      <module name="server" options="-parameters" />
+      <module name="model" options="-parameters" />
+      <module name="operator" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="photo" options="-parameters" />
+      <module name="schedule" options="-parameters" />
+      <module name="server" options="" />
+      <module name="system" options="-parameters" />
+      <module name="system-services" options="-parameters" />
       <module name="utils" options="-parameters" />
+      <module name="warn" options="-parameters" />
     </option>
   </component>
 </project>
