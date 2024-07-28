@@ -33,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/server/repair/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/schedule/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/schedule/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/search/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/station/src/main/java" charset="UTF-8" />
@@ -43,10 +45,13 @@
     <file url="file://$PROJECT_DIR$/server/system-services/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/text/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/text/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/warn/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/warn/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/es-init/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/minio-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/minio-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/src/main/java" charset="UTF-8" />

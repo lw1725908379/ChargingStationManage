@@ -21,13 +21,9 @@
         <option value="$PROJECT_DIR$/server/charge-services/pom.xml" />
         <option value="$PROJECT_DIR$/server/system-services/pom.xml" />
         <option value="$PROJECT_DIR$/server/schedule/pom.xml" />
+        <option value="$PROJECT_DIR$/server/text/pom.xml" />
+        <option value="$PROJECT_DIR$/server/search/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/server/warn/pom.xml" />
-        <option value="$PROJECT_DIR$/test/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

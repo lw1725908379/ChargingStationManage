@@ -13,8 +13,10 @@
     <mapping directory="$PROJECT_DIR$/server/order" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/server/photo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/server/schedule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/server/search" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/server/system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/server/system-services" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/server/text" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/utils" vcs="Git" />
   </component>

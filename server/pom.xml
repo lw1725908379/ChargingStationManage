@@ -9,6 +9,7 @@
         <module>order</module>
         <module>photo</module>
         <module>system-services</module>
+        <module>search</module>
     </modules>
 
     <parent>
