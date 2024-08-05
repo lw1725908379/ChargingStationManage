@@ -4,144 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="初步尝试将单体项目转化为微服务项目。">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spullara_mustache_java_compiler_0_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_extras_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_8_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_client_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_high_level_client_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_cli_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_core_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_geo_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_secure_sm_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_x_content_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_jna_4_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_aggs_matrix_stats_client_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_lang_mustache_client_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_mapper_extras_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_parent_join_client_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_rank_eval_client_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_4_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_3_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/aliyun/AliyunProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/jackson/ConfusionDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/jackson/ConfusionDeserializerModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/jackson/ConfusionModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/jackson/ConfusionSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/jackson/ConfusionSerializerModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/jackson/InitJacksonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/redis/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/schedule/IScheduleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/text/ITextClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/text/fallback/ITextClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/comment/annotation/IdEncrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/constant/ScheduleConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/enums/TaskTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/operator/constant/OperatorMessageConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/search/constants/EsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/search/dtos/HistorySearchDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/search/dtos/UserSearchDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/station/constant/StationConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/IAppointTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/AppointTaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/feign/ScheduleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/mapper/TaskinfoLogsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/mapper/TaskinfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/schedule/src/main/resources/mapper/TaskinfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/SearchApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/config/ElasticSearchConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/controller/v1/AssociateWordsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/controller/v1/StationSearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/controller/v1/UserSearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/listener/SyncStationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/pojos/AssociateWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/pojos/UserSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/service/AssociateWordsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/service/StationSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/service/UserSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/service/impl/ArticleSearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/service/impl/AssociateWordsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/java/cn/edu/lw/search/service/impl/UserSearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/search/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/java/cn/edu/lw/text/TextApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/java/cn/edu/lw/text/controller/TextController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/java/cn/edu/lw/text/feign/TextClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/java/cn/edu/lw/text/listener/AppointListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/java/cn/edu/lw/text/service/SensitiveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/text/src/test/java/cn/edu/lw/text/TextApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/EsInitApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/config/ElasticSearchConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/mapper/StationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/pojo/SearchStationVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/resources/mapper/StationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/test/java/cn/edu/lw/es/ApArticleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/common/ProtostuffUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/thread/UserThreadLocalUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/lw/common/aliyun/GreenImageScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/aliyun/GreenImageScan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/lw/common/aliyun/GreenTextScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/lw/common/aliyun/GreenTextScan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/system_services/IUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/lw/api/system_services/IUserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/OperatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/OperatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/controller/StationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/AppointServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/AppointServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/OperatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/OperatorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/StationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/src/main/java/cn/edu/lw/chargeservices/service/impl/StationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/charge-services/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/charge-services/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/comment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/comment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/v2/impl/CommentServiceV2Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/comment/src/main/java/com/edu/lw/comment/service/v2/impl/CommentServiceV2Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/controller/v2/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/photo/src/main/java/com/edu/lw/photo/controller/v2/PhotoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schedule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/schedule/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/ScheduleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/schedule/src/main/java/com/edu/lw/schedule/ScheduleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/feign/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/system-services/src/main/java/cn/edu/lw/systemservices/feign/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/edu/lw/test/TestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/test/java/com/edu/lw/test/TestApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="延迟队列实现预约充电功能、Kafka、es搜索功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,39 +74,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/WORKS/java/projects/ChargingStationManage/common/src/main/java/com/lw/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.13967973",
-    "project.structure.side.proportion": "0.29089028",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
-    "spring.configuration.checksum": "a61ef6160f1fab37bdf3eb66b5306b08",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/WORKS/java/projects/ChargingStationManage/common/src/main/java/com/lw/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.13967973&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.29089028&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a61ef6160f1fab37bdf3eb66b5306b08&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -651,7 +514,7 @@
       <workItem from="1721818091799" duration="2187000" />
       <workItem from="1721964445674" duration="104000" />
       <workItem from="1722089414831" duration="1271000" />
-      <workItem from="1722179527879" duration="796000" />
+      <workItem from="1722179527879" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -744,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721376336942</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="延迟队列实现预约充电功能、Kafka、es搜索功能">
+      <created>1722180684282</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722180684282</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -789,7 +659,8 @@
     <MESSAGE value="实现图片上传到MinIO，同时集成阿里云内容安全接口进行违规检测，并使用异步调用优化性能。" />
     <MESSAGE value="使用DFA算法进行敏感词管理以审核用户评论内容。" />
     <MESSAGE value="初步尝试将单体项目转化为微服务项目。" />
-    <option name="LAST_COMMIT_MESSAGE" value="初步尝试将单体项目转化为微服务项目。" />
+    <MESSAGE value="延迟队列实现预约充电功能、Kafka、es搜索功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="延迟队列实现预约充电功能、Kafka、es搜索功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
