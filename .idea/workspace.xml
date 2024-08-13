@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="延迟队列实现预约充电功能、Kafka、es搜索功能" />
+    <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="延迟队列实现预约充电功能、Kafka、es搜索功能">
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/constant/EsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/config/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/thread/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/es-init/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/mapper/StationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/mapper/StationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/es-init/src/main/resources/mapper/StationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/src/main/resources/mapper/StationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/es-init/src/test/java/cn/edu/lw/es/ApArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/src/test/java/cn/edu/lw/es/ApArticleTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +37,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/common" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/api-test/user-api.http" />
@@ -74,39 +89,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/WORKS/java/projects/ChargingStationManage/common/src/main/java/com/lw/common&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.13967973&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.29089028&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a61ef6160f1fab37bdf3eb66b5306b08&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/WORKS/java/projects/ChargingStationManage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.13967973",
+    "project.structure.side.proportion": "0.29089028",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "spring.configuration.checksum": "a61ef6160f1fab37bdf3eb66b5306b08",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -129,11 +144,11 @@
       <recent name="com.edu.basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lw.utils.thread" />
+      <recent name="cn.edu.lw.es.config" />
       <recent name="com.edu.lw.model.comment.annotation" />
       <recent name="com.edu.lw.model.search.dtos" />
       <recent name="cn.edu.lw.search.interceptor" />
-      <recent name="com.lw.api.text.fallback" />
-      <recent name="cn.edu.lw.text.service" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ChargingStationManageApplicationTest.greeTextScan">
@@ -515,6 +530,10 @@
       <workItem from="1721964445674" duration="104000" />
       <workItem from="1722089414831" duration="1271000" />
       <workItem from="1722179527879" duration="1034000" />
+      <workItem from="1722830876288" duration="1027000" />
+      <workItem from="1722839296928" duration="2313000" />
+      <workItem from="1722860992024" duration="2649000" />
+      <workItem from="1723540539174" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -614,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722180684282</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="延迟队列实现预约充电功能、Kafka、es搜索功能">
+      <created>1722830935452</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722830935452</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
