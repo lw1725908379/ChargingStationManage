@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="580f30eb-78c1-47af-8640-e32253d81bb8" name="Default Changelist" comment="延迟队列实现预约充电功能、Kafka、es搜索功能">
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/edu/lw/model/constant/EsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/config/ThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/lw/utils/thread/ThreadPoolConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/es-init/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/mapper/StationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/src/main/java/cn/edu/lw/es/mapper/StationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/es-init/src/main/resources/mapper/StationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/src/main/resources/mapper/StationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/es-init/src/test/java/cn/edu/lw/es/ApArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/es-init/src/test/java/cn/edu/lw/es/ApArticleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +33,12 @@
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/api-test/user-api.http" />
@@ -93,6 +88,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Git.Branch.Popup.ShowAllRepositories": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -533,7 +529,10 @@
       <workItem from="1722830876288" duration="1027000" />
       <workItem from="1722839296928" duration="2313000" />
       <workItem from="1722860992024" duration="2649000" />
-      <workItem from="1723540539174" duration="707000" />
+      <workItem from="1723540539174" duration="2353000" />
+      <workItem from="1723543088506" duration="96000" />
+      <workItem from="1723543857426" duration="75000" />
+      <workItem from="1723545063603" duration="2180000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1717248706039</created>
@@ -640,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1722830935452</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="延迟队列实现预约充电功能、Kafka、es搜索功能">
+      <created>1723541462781</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723541462781</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,6 +658,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">

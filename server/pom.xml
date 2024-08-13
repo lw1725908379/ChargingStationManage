@@ -10,6 +10,7 @@
         <module>photo</module>
         <module>system-services</module>
         <module>search</module>
+        <module>schedule</module>
     </modules>
 
     <parent>
